@@ -4,7 +4,7 @@
 |-----------------|-------------|---------------|--------------------------|
 |Reasoning / Logic|Mathematical reasoning|GSM8K|(correct answers / total)|
 |Commonsense QA|Everyday reasoning and knowledge|PIQA, BoolQ|Accuracy|
-|Summarization|condense information|CNN/DailyMail, XSum|ROUGE-L, BERTScore|
+|Summarization|Condensing information|CNN/DailyMail, XSum|ROUGE-L, BERTScore|
 |Code Generation|Logical structure|HumanEval-lite, MBPP|Pass@k|
 
 ## Datasets
@@ -40,7 +40,10 @@ id: BBC ID of the article.
 It is an English-language dataset containing just over
 300k unique news articles as written by journalists at CNN and the Daily Mail.
 he current version supports both extractive and abstractive summarization.
-The HumanEval dataset released by OpenAI includes 164 programming problems
+
+### The HumanEval Dataset
+
+released by OpenAI includes 164 programming problems
 with a function sig- nature, docstring, body, and several unit tests.
 They were handwritten to ensure not to be included in the training
 set of code generation models.
