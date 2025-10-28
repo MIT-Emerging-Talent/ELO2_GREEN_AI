@@ -13,34 +13,34 @@ retrieval-augmented generation capabilities.
 
 ## 📂 Dataset Contents
 
-- **[README.md][readme]** - This file (overview and instructions)
-- **[source_text.txt][source]** - Apollo 11 excerpted text (~1,400 words, plain text)
-- **[test_prompts.md][prompts]** - 15 test prompts (readable format)
+- **[README.md][readme]** - This file (overview and instructions)  
+- **[source_text.txt][source]** - Apollo 11 excerpted text (~1,400 words, plain text)  
+- **[test_prompts.md][prompts]** - 15 test prompts (readable format)  
 - **[test_data.json][json]** - Complete dataset (structured format for automated
-  testing)
+  testing)  
 - **[RATIONALE.md][rationale]** - Detailed explanation of selection decisions
 
 📌 **Process documentation:** For background on dataset creation decisions and
 team discussions, see the **[team briefing](https://docs.google.com/document/d/1jAE2Y2BJDx014MAXCxyH0-2EgieL_tCxCEeMK4VWBNQ/edit?usp=sharing)**
 
-[readme]: /test_dataset_apollo11/README.md
-[source]: /test_dataset_apollo11/source_text.txt
-[prompts]: /test_dataset_apollo11/test_prompts.md
-[json]: /test_dataset_apollo11/test_data.json
+[readme]: /test_dataset_apollo11/README.md  
+[source]: /test_dataset_apollo11/source_text.txt  
+[prompts]: /test_dataset_apollo11/test_prompts.md  
+[json]: /test_dataset_apollo11/test_data.json  
 [rationale]: /test_dataset_apollo11/RATIONALE.md
 
 ---
 
 ## 📄 Source & License
 
-**Source:** Wikipedia - Apollo 11 article
-**URL:** <https://en.wikipedia.org/wiki/Apollo_11>
-**Permanent Link:** <https://en.wikipedia.org/w/index.php?title=Apollo_11&oldid=1252473845>
-**Revision ID:** 1252473845 (Wikipedia internal revision number)
-**Date Accessed:** October 22, 2025
+**Source:** Wikipedia - Apollo 11 article  
+**URL:** <https://en.wikipedia.org/wiki/Apollo_11>  
+**Permanent Link:** <https://en.wikipedia.org/w/index.php?title=Apollo_11&oldid=1252473845>  
+**Revision ID:** 1252473845 (Wikipedia internal revision number)  
+**Date Accessed:** October 22, 2025  
 **Sections:** Excerpted passages from "Lunar landing" and "Lunar surface
-operations"
-**Word Count:** ~1,400 words
+operations"  
+**Word Count:** ~1,400 words  
 **Language:** English
 
 **License:** Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0)
@@ -63,15 +63,15 @@ practical testing while maintaining all information necessary for the 15 test pr
 
 ## 🎯 Selection Rationale
 
-✅ **Practical length** - ~1,400 words manageable for all model types including
+- ✅ **Practical length** - ~1,400 words manageable for all model types including
 distilled models with standard chunking
-✅ **Rich in specific details** - Ideal for RAG testing (times, names, numbers,
+- ✅ **Rich in specific details** - Ideal for RAG testing (times, names, numbers,
 technical terms)
-✅ **Multiple complexity levels** - Both simple recall and complex reasoning can
+- ✅ **Multiple complexity levels** - Both simple recall and complex reasoning can
 be tested
-✅ **Narrative structure** - Clear sequence from descent through surface
+- ✅ **Narrative structure** - Clear sequence from descent through surface
 activities
-✅ **All prompts answerable** - 15 test prompts verified to work with selected
+- ✅ **All prompts answerable** - 15 test prompts verified to work with selected
 passages
 
 The excerpts cover the dramatic descent and landing sequence, followed by
@@ -90,7 +90,7 @@ reasoning, and RAG tasks.
 
 Tests model's ability to condense and extract key information
 
-**Difficulty:** Easy → Medium → Hard
+**Difficulty:** Easy → Medium → Hard  
 **Examples:** Main events, challenges faced, activities performed, equipment
 deployed
 
@@ -99,7 +99,7 @@ deployed
 Tests model's ability to analyze, infer, and make connections
 
 **Types:** Causal reasoning, hypothetical scenarios, interpretation, deep
-analysis
+analysis  
 **Examples:** Why did computer alarms occur? What if Armstrong hadn't taken
 manual control? What does Margaret Hamilton's statement reveal?
 
@@ -107,7 +107,7 @@ manual control? What does Margaret Hamilton's statement reveal?
 
 Tests model's ability to retrieve specific information from source text
 
-**Types:** Times, quotes, numbers, lists, complex multi-part facts
+**Types:** Times, quotes, numbers, lists, complex multi-part facts  
 **Examples:** Landing time? Material collected? Scientific instruments deployed?
 
 📌 See [test_prompts.md][prompts] for the readable format, or [test_data.json][json]
@@ -125,11 +125,11 @@ but attempting all prompts provides comprehensive evaluation data.
 
 **Testing Protocol:**
 
-**1.** Use the source text from **[source_text.txt][source]** exactly as provided
-**2.** Use all 15 prompts from **[test_prompts.md][prompts]** without modification
+**1.** Use the source text from **[source_text.txt][source]** exactly as provided  
+**2.** Use all 15 prompts from **[test_prompts.md][prompts]** without modification  
 **3.** *(Optional)* Use **[test_data.json][json]** for automated or scripted
-   testing workflows
-**4.** Record responses for each prompt with model configuration details
+   testing workflows  
+**4.** Record responses for each prompt with model configuration details  
 **5.** Note any errors, failures, or unusual behaviors
 
 ---
@@ -138,9 +138,9 @@ but attempting all prompts provides comprehensive evaluation data.
 
 For each prompt, record:
 
-**1. Accuracy** - Is the answer factually correct?
-**2. Completeness** - Are all key points covered?
-**3. Specificity** - Are specific details included (times, names, numbers)?
+**1. Accuracy** - Is the answer factually correct?  
+**2. Completeness** - Are all key points covered?  
+**3. Specificity** - Are specific details included (times, names, numbers)?  
 **4. Reasoning Quality** - For reasoning prompts, is the logic sound and
    well-supported?  
 
