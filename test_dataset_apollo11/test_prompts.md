@@ -77,10 +77,10 @@ flight did this represent?
 
 ### Expected Answers for RAG Tasks
 
-**Prompt 11:** 20:17:40 UTC on July 20, 1969
-**Prompt 12:** 21.55 kilograms (47.5 lb)
-**Prompt 13:** "That's one small step for [a] man, one giant leap for mankind"
+**Prompt 11:** 20:17:40 UTC on July 20, 1969  
+**Prompt 12:** 21.55 kilograms (47.5 lb)  
+**Prompt 13:** "That's one small step for [a] man, one giant leap for mankind"  
 **Prompt 14:** Passive Seismic Experiment Package and retroreflector array
-(for lunar laser ranging experiment)
+(for lunar laser ranging experiment)  
 **Prompt 15:** 216 pounds (98 kg); estimated 25 seconds according to initial data,
 but post-mission analysis showed closer to 50 seconds
