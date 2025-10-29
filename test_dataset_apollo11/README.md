@@ -18,7 +18,7 @@ retrieval-augmented generation capabilities.
 (~1,400 words, plain text)  
 - **[test_prompts.md][prompts]** - 15 test prompts (readable format)  
 - **[test_data.json][json]** - Complete dataset (structured format for automated
-  testing)  
+  testing)
 - **[RATIONALE.md][rationale]** - Detailed explanation of selection decisions
 
 📌 **Process documentation:** For background on dataset creation decisions and
