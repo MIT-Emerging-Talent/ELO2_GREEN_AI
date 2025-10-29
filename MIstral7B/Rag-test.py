@@ -1,9 +1,10 @@
-from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
-from llama_index.llms.llama_cpp import LlamaCPP
+from llama_index.core import Settings, SimpleDirectoryReader, VectorStoreIndex
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from llama_index.llms.llama_cpp import LlamaCPP
+
 # --- Configuration ---
 # Point to your downloaded model file
-MODEL_PATH = "D:/Mistral7B/mistral-7b-instruct-v0.2.Q4_K_M.gguf" # <-- IMPORTANT: update this path
+MODEL_PATH = "D:/Mistral7B/mistral-7b-instruct-v0.2.Q4_K_M.gguf"  # <-- IMPORTANT: update this path
 
 # --- 1. Load the LLM (our quantized Mistral model) ---
 # This uses llama-cpp-python to run the GGUF model on your CPU
@@ -12,9 +13,11 @@ llm = LlamaCPP(
     # Model parameters - you can adjust these
     temperature=0.1,
     max_new_tokens=512,
-    context_window=3900, # The model's context window size
+    context_window=3900,  # The model's context window size
     generate_kwargs={},
-    model_kwargs={"n_gpu_layers": -1}, # Set to > 0 if you have a GPU and want to offload layers
+    model_kwargs={
+        "n_gpu_layers": -1
+    },  # Set to > 0 if you have a GPU and want to offload layers
     verbose=True,
 )
 
@@ -45,12 +48,12 @@ query_engine = index.as_query_engine(streaming=True)
 print("\n--- Query Engine Ready ---")
 while True:
     query = input("Ask a question about your documents: ")
-    if query.lower() == 'exit':
+    if query.lower() == "exit":
         break
-    
+
     response_stream = query_engine.query(query)
-    
+
     print("\nAssistant: ", end="")
     # Stream the response to the console
     response_stream.print_response_stream()
-    print("\n" + "-"*50)
+    print("\n" + "-" * 50)

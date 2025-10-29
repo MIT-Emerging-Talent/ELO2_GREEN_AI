@@ -1,35 +1,35 @@
-import os
 import time
-from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
-from llama_index.llms.llama_cpp import LlamaCPP
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+
 from codecarbon import OfflineEmissionsTracker
-from ragas import evaluate
-from ragas.metrics import faithfulness, answer_relevancy
 from datasets import Dataset
 from langchain_community.llms import LlamaCpp
+from llama_index.core import Settings, SimpleDirectoryReader, VectorStoreIndex
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from llama_index.llms.llama_cpp import LlamaCPP
+from ragas import evaluate
 from ragas.llms import LangchainLLMWrapper
+from ragas.metrics import answer_relevancy, faithfulness
 
 # --- 1. Configuration ---
 
 # Set the path to your downloaded GGUF model
-MODEL_PATH = "D:/Mistral7B/mistral-7b-instruct-v0.2.Q4_K_M.gguf" # <-- IMPORTANT: Update this path if needed
+MODEL_PATH = "D:/Mistral7B/mistral-7b-instruct-v0.2.Q4_K_M.gguf"  # <-- IMPORTANT: Update this path if needed
 
 # Set the path to your data (PDFs, .txt, etc.)
-DATA_PATH = "D:/Mistral7B/data" # <-- IMPORTANT: Update this path if needed
+DATA_PATH = "D:/Mistral7B/data"  # <-- IMPORTANT: Update this path if needed
 
 # Set your country's ISO code for CodeCarbon
 # Find your code: https://en.wikipedia.org/wiki/List_of_ISO_3166-1_alpha-3_codes
 # Using "EGY" for Egypt as an example
-YOUR_COUNTRY_ISO_CODE = "EGY" 
+YOUR_COUNTRY_ISO_CODE = "EGY"
 
 # Define your "Golden Set" of test questions
 TEST_QUESTIONS = [
     "What is the main topic of the document?",
-    #"Summarize the key findings in three bullet points.",
+    # "Summarize the key findings in three bullet points.",
     # ... add 10-15 more of your own questions ...
-    #"What is [a specific term] according to the text?",
-    #"What conclusion does the author reach?",
+    # "What is [a specific term] according to the text?",
+    # "What conclusion does the author reach?",
 ]
 
 # --- 2. Initialize Models ---
@@ -43,7 +43,7 @@ llm = LlamaCPP(
     max_new_tokens=512,
     context_window=3900,
     generate_kwargs={},
-    model_kwargs={"n_gpu_layers": 1}, # Set > 0 if you have GPU offloading
+    model_kwargs={"n_gpu_layers": 1},  # Set > 0 if you have GPU offloading
     verbose=True,
 )
 
@@ -84,38 +84,38 @@ print("\n--- Starting Evaluation Loop ---")
 try:
     for query in TEST_QUESTIONS:
         print(f"\nQuerying: {query}")
-        
+
         # --- Start tracking for this specific query ---
-        tracker.start_task("RAG Query") 
+        tracker.start_task("RAG Query")
         start_time = time.time()
-        
+
         # Run the query
         response = query_engine.query(query)
-        
+
         # --- Stop tracking for this query ---
         end_time = time.time()
         # stop_task() returns an EmissionsData OBJECT
-        emissions_data = tracker.stop_task() 
-        
+        emissions_data = tracker.stop_task()
+
         # Collect results for ragas
         answer = str(response)
         contexts = [node.get_content() for node in response.source_nodes]
-        
+
         eval_data["question"].append(query)
         eval_data["answer"].append(answer)
         eval_data["contexts"].append(contexts)
-        
+
         # --- Print Results for this Query ---
         print(f"Answer: {answer}")
         print("-" * 30)
         print(f"Latency: {end_time - start_time:.2f} seconds")
-        
+
         # --- CORRECTED LINES ---
         # Access attributes using dot notation
         print(f"Emissions: {emissions_data.emissions * 1000:.6f} gCO2eq")
         print(f"Energy: {emissions_data.energy_consumed * 1000:.6f} Wh")
         # --- END OF CORRECTION ---
-        
+
         print("=" * 50)
 
 finally:
@@ -124,7 +124,9 @@ finally:
     total_emissions_kg = tracker.stop()
     print("\n--- Total Emissions Summary (Saved to emissions.csv) ---")
     # Access total energy from the tracker object itself
-    print(f"Total Energy Consumed: {tracker.final_emissions_data.energy_consumed * 1000:.4f} Wh")
+    print(
+        f"Total Energy Consumed: {tracker.final_emissions_data.energy_consumed * 1000:.4f} Wh"
+    )
     print(f"Total CO2 Emitted: {total_emissions_kg * 1000:.4f} gCO2eq")
     # --- END OF CORRECTION ---
 
@@ -148,10 +150,10 @@ eval_dataset = Dataset.from_dict(eval_data)
 #    This points to the same model file.
 eval_llm = LlamaCpp(
     model_path=MODEL_PATH,
-    n_gpu_layers=1,      # Match your settings from Section 2
-    n_batch=512,         # Match your settings
-    n_ctx=3900,          # Match your settings
-    temperature=0,       # Evaluators should be deterministic
+    n_gpu_layers=1,  # Match your settings from Section 2
+    n_batch=512,  # Match your settings
+    n_ctx=3900,  # Match your settings
+    temperature=0,  # Evaluators should be deterministic
     verbose=False,
 )
 # 3. Wrap the LangChain object for Ragas
@@ -164,8 +166,8 @@ result = evaluate(
         faithfulness,
         answer_relevancy,
     ],
-    llm=ragas_llm,          # <-- Pass the evaluator LLM here
-    embeddings=embed_model, # <-- Pass the embeddings here
+    llm=ragas_llm,  # <-- Pass the evaluator LLM here
+    embeddings=embed_model,  # <-- Pass the embeddings here
 )
 
 print("\n--- Ragas Accuracy Results ---")

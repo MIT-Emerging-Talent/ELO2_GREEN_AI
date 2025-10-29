@@ -10,11 +10,11 @@ try:
     llm = Llama(
         model_path=MODEL_PATH,
         n_gpu_layers=-1,  # Try to offload all layers to GPU
-        verbose=True      # This is the most important part!
+        verbose=True,  # This is the most important part!
     )
     print("\n--- TEST SUCCESSFUL ---")
     # Check the output above for lines mentioning CUDA or cuBLAS and layer offloading
 
 except Exception as e:
-    print(f"\n--- TEST FAILED ---")
+    print("\n--- TEST FAILED ---")
     print(f"An error occurred: {e}")
