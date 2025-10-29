@@ -35,7 +35,7 @@ team discussions, see the **[team briefing](https://docs.google.com/document/d/1
 
 **Source:** Wikipedia - Apollo 11 article  
 **URL:** <https://en.wikipedia.org/wiki/Apollo_11>  
-**Permanent Link:** 
+**Permanent Link:**
 <https://en.wikipedia.org/w/index.php?title=Apollo_11&oldid=1252473845>  
 **Revision ID:** 1252473845 (Wikipedia internal revision number)  
 **Date Accessed:** October 22, 2025  
