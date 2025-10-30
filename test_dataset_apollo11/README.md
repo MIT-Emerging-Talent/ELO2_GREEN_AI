@@ -13,9 +13,10 @@ retrieval-augmented generation capabilities.
 
 ## 📂 Dataset Contents
 
-- **[README.md][readme]** - This file (overview and instructions)
-- **[source_text.txt][source]** - Apollo 11 excerpted text (~1,400 words, plain text)
-- **[test_prompts.md][prompts]** - 15 test prompts (readable format)
+- **[README.md][readme]** - This file (overview and instructions)  
+- **[source_text.txt][source]** - Apollo 11 excerpted text
+(~1,400 words, plain text)  
+- **[test_prompts.md][prompts]** - 15 test prompts (readable format)  
 - **[test_data.json][json]** - Complete dataset (structured format for automated
   testing)
 - **[RATIONALE.md][rationale]** - Detailed explanation of selection decisions
@@ -35,8 +36,7 @@ team discussions, see the **[team briefing](https://docs.google.com/document/d/1
 
 **Source:** Wikipedia - Apollo 11 article  
 **URL:** <https://en.wikipedia.org/wiki/Apollo_11>  
-**Permanent Link:**
-<https://en.wikipedia.org/w/index.php?title=Apollo_11&oldid=1252473845>  
+**Link:**<https://en.wikipedia.org/w/index.php?title=Apollo_11&oldid=1252473845>
 **Revision ID:** 1252473845 (Wikipedia internal revision number)  
 **Date Accessed:** October 22, 2025  
 **Sections:** Excerpted passages from "Lunar landing" and "Lunar surface
@@ -126,10 +126,10 @@ but attempting all prompts provides comprehensive evaluation data.
 
 **Testing Protocol:**
 
-**1.** Use the source text from **[source_text.txt][source]** exactly
-as provided  
-**2.** Use all 15 prompts from **[test_prompts.md][prompts]**
-without modification  
+**1.** Use the source text from **[source_text.txt][source]**
+exactly as provided
+**2.** Use all 15 prompts from **[test_prompts.md][prompts]** without
+modification
 **3.** *(Optional)* Use **[test_data.json][json]** for automated or scripted
    testing workflows  
 **4.** Record responses for each prompt with model configuration details  
