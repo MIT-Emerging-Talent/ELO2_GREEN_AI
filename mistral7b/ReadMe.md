@@ -18,7 +18,7 @@ of running an open-source model locally on consumer hardware (a laptop) as
 Mistral 7B was selected as the core model for this project for several key reasons:
 
 * **Performance vs. Size:** It is famous for outperforming much larger models
-(like Llama 2 13B):
+(like Llama 2 13B)
 * on a wide range of benchmarks, offering state-of-the-art
   performance in a small package.
 * **Local Feasibility:** Its 7-billion-parameter size, especially when **quantized**
