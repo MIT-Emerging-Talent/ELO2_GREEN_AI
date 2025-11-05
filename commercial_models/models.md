@@ -45,6 +45,13 @@ Source: [The Carbon Footprint of ChatGPT][sustainability-numbers].
 
 These are indirect estimates, not official OpenAI disclosures.
 
+### Model Size (GPT-4)
+
+Estimated model size: **≈ 1.8 trillion parameters** (widely reported
+estimate; OpenAI has not publicly confirmed exact parameter count).
+
+Source: SemiAnalysis and other architecture analyses.
+
 ### Water Usage (GPT-4)
 
 Official data are unavailable, but media analyses suggest:
@@ -84,6 +91,13 @@ energy-efficient inference in chat, summarization, and automation.
 
 Source: [Anthropic Blog – Claude 3 Technical Overview][anthropic-blog].
 
+### Model Size / Architecture
+
+Estimated model size: **≈ 7 billion parameters** (Haiku variant,
+optimized for efficiency and low-latency inference).
+
+Source: public model reports and community discussions.
+
 ### Hosting & Deployment
 
 Hosted via Anthropic API and **Amazon Bedrock (AWS)**.
@@ -97,33 +111,40 @@ Anthropic does not publish per-query energy data.
 Independent analysts estimate ≈ 0.05 – 0.1 Wh (0.00005 – 0.0001 kWh)
 per query based on token count and GPU efficiency.
 
-Claude 3 Haiku is ≈ 5× faster and more efficient than larger Claude 3 models.
+Claude 3 Haiku is ≈ 5× faster and more efficient than larger Claude 3
+models.
 
-Sources: [Epoch AI – Energy Use of AI Models][epoch-ai],
-[Anthropic Claude 3 Announcement].
+Sources: [Epoch AI – Energy Use of AI Models]Sources:
+[epoch-ai-training], [Anthropic Claude 3 Announcement].
 
 ### Training Energy
 
-Claude 3 models use NVIDIA A100/H100 GPUs on AWS.
-Typical energy use ≈ 3 000 – 10 000 MWh for 10–30 B parameters.
+Claude 3 models are trained on GPU clusters (NVIDIA A100/H100) primarily
+hosted on AWS infrastructure.
+For models in the 10–30B parameter range, training energy is typically
+3,000–10,000 MWh.
 
-Sources: [Epoch AI – AI Training Compute and Energy Scaling],
-[Anthropic Responsible Scaling Policy][anthropic-policy].
+Sources: [Epoch AI – AI Training Compute & Energy Scaling],
+[Anthropic Responsible Scaling Policy].
 
 ### Water Usage
 
-No specific data published.  
-Cooling water managed under **AWS sustainability strategy**.  
-Cooler regions use air cooling; others recycle water on-site.
+Anthropic has not published specific water consumption figures for the
+Claude 3 family.
+As it relies on AWS data centers, cooling water use is managed under AWS
+sustainability strategy.
+AWS data centers in cooler regions use air cooling to reduce water
+footprint, while others recycle water on-site.
 
 Sources: [AWS Water Stewardship Report][aws-water],
 [Anthropic Sustainability Commitments].
 
 ### PUE and CI Context
 
-* **AWS PUE:** ≈ 1.2  
-* **Carbon Intensity:** ≈ 0 – 0.2 kg CO₂e / kWh (depending on renewables)  
-AWS targets 100 % renewable energy by 2025.
+AWS’s average PUE: ~1.2 (accounts for cooling and power delivery losses).
+Carbon intensity (CI): ~0–0.2 kg CO₂e/kWh, depending on regional renewable
+mix.
+AWS aims for 100% renewable energy by 2025, lowering emissions over time.
 
 Sources: [AWS Global Infrastructure Efficiency Data],
 [Anthropic Responsible Scaling Policy][anthropic-policy].
@@ -147,27 +168,41 @@ Sources: [Google AI Blog – Introducing Gemini][google-blog],
 [Android Developers – Gemini Nano Overview][android-dev],
 [The Verge – Gemini Nano on Pixel 8 Pro][verge-gemini].
 
-### Estimated Energy(Inference)
+### Estimated Model Size / Architecture
+
+Gemini Nano variants (device-optimized):  
+
+* **Nano-1:** ≈ 1.8 billion parameters  
+* **Nano-2:** (larger device variant) ≈ 3.25 billion parameters
+
+These use quantized weights tuned for on-device inference.
+
+Source: device benchmark reports and public model parameter listings.
+
+### Estimated Energy (Inference) gemini
 
 No official values.  
-Device benchmarks show ≈ 0.01 Wh (0.00001 kWh) per query —
+Device benchmarks show ≈ 0.01 Wh (0.00001 kWh) per query —  
 10 – 30× more efficient than GPT-4.
 
 Sources: [Google Pixel AI Benchmarks (2024)],
 [Epoch AI – How Much Energy Does ChatGPT Use][epoch-ai].
 
-### Training Energy of gemini
+### Training Energy Estimates
 
-Gemini Nano is distilled from larger Gemini models trained on **TPU v5e**.  
-Training energy ≈ 200 – 1 200 MWh (1 – 5 % of Gemini Ultra).
+Gemini Nano was distilled from larger Gemini models trained on **TPU v5e**
+clusters.
+Training energy for Nano ≈ 200 – 1,200 MWh (≈ 1–5% of Gemini Ultra’s
+training compute).
 
 Sources: [Google Research – Efficient TPU Training (2024)],
 [Google Cloud Sustainability Report (2024)].
 
-### Water Usage (nano)
+### Water Usage (Nano)
 
-Inference uses no data-center water.  
-Training used Google data centers with **WUE ≈ 0.18 L/kWh**.  
+Inference uses no data-center water since it runs locally on devices.
+Training used Google data centers with Water Usage Effectiveness (WUE)
+≈ 0.18 L/kWh.
 Google targets net-positive water impact by 2030.
 
 Sources: [Google Environmental Report (2024)],
@@ -175,9 +210,9 @@ Sources: [Google Environmental Report (2024)],
 
 ### PUE & CI Context
 
-* **PUE:** ≈ 1.10 – 1.12 (Google Data Centers)
-* **CI:** ≈ 0.15 kg CO₂e / kWh (70 % renewable mix)
-* **On-device:** < 5 W per inference
+Google Data Centers report average PUE ≈ 1.10–1.12.
+Carbon Intensity (CI) ≈ 0.15 kg CO₂e / kWh due to 70%+ renewable energy mix.
+On-device execution uses < 5 W of mobile power per inference.
 
 Sources: [Google Data Center Efficiency Overview (2024)],
 [Google TPU v5e Efficiency Blog (2024)].
@@ -210,7 +245,7 @@ https://www.theverge.com/2023/12/6/23990823/google-gemini-ai-models-nano-pro-ult
 https://aws.amazon.com/bedrock/
 [Anthropic Claude 3 Announcement]:
 https://www.anthropic.com/news/claude-3-models
-[Epoch AI – AI Training Compute and Energy Scaling]:
+[epoch-ai-training]:
 https://epoch.ai/gradient-updates/ai-training-compute-energy-scaling
 [Anthropic Sustainability Commitments]:
 https://www.anthropic.com/sustainability
