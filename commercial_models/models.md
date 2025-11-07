@@ -75,7 +75,7 @@ It is optimized for low-latency, energy-efficient applications such as chatbots,
 
 Sources:  
 
-- [Anthropic Blog – *Introducing the Claude 3 Model Family*](https://www.anthropic.com/news/claude-3-models)  
+- [Anthropic Blog – *Introducing the Claude 3 Model Family*](https://www.anthropic.com/news/claude-3-family)  
 - [Anthropic 3 Announcement](https://www.anthropic.com/news/claude-3-7-sonnet)
 
 ### Hosting / Deployment
