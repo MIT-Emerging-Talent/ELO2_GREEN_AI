@@ -37,7 +37,7 @@ Sources:
 Estimates vary between studies:  
 
 - **Epoch AI (2024):** ≈ 0.3 Wh (0.0003 kWh) per query under typical load.  
-  Source: [Epoch AI – *How Much Energy Does ChatGPT Use?*](https://epoch.ai/blog/how-much-energy-does-chatgpt-use)  
+  Source: [Epoch AI – *How Much Energy Does ChatGPT Use?*](https://epoch.ai/gradient-updates/how-much-energy-does-chatgpt-use)  
 - **Other analysts:** 0.3 – 1.8 Wh (0.0003 – 0.0018 kWh), depending on token count and hardware.
 
 **Note:** OpenAI has not released official inference energy data.  
