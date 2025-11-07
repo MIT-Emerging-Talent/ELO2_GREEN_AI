@@ -55,7 +55,7 @@ Water consumption derives from data-center cooling processes:
 
 - A single ChatGPT query may indirectly consume ≈ 0.5 L of water.  
 - Generating a 100-word email ≈ 0.14 kWh energy + 0.52 L water.  
-Source: [The Verge – *Sam Altman on ChatGPT Energy and Water Use*](https://www.theverge.com/2023/11/16/sam-altman-chatgpt-energy-water-use)
+Source: [The Verge – *Sam Altman on ChatGPT Energy and Water Use*](https://www.theverge.com/news/685045/sam-altman-average-chatgpt-energy-water?)
 
 ### PUE / CI Context Used in Studies
 
