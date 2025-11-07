@@ -76,7 +76,7 @@ It is optimized for low-latency, energy-efficient applications such as chatbots,
 Sources:  
 
 - [Anthropic Blog – *Introducing the Claude 3 Model Family*](https://www.anthropic.com/news/claude-3-models)  
-- [Anthropic Responsible Scaling Policy](https://www.anthropic.com/policies/responsible-scaling-policy)
+- [Anthropic 3 Announcement](https://www.anthropic.com/news/claude-3-7-sonnet)
 
 ### Hosting / Deployment
 
@@ -100,8 +100,8 @@ Based on 10–30 B parameter transformers: ≈ 0.05 – 0.1 Wh (0.00005 – 0.00
 Haiku is ≈ 5× more efficient than Claude 3 Sonnet or Opus.  
 Sources:  
 
-- [Epoch AI – *Machine Learning Trends*](https://epoch.ai/blog/machine-learning-trends)  
-- [Anthropic Claude 3 Announcement](https://www.anthropic.com/news/claude-3-models)
+- [Epoch AI – Machine Learning Trends (for compute/power scaling)](https://epoch.ai/trends)  
+- [Anthropic 3 Announcement](https://www.anthropic.com/news/claude-3-7-sonnet)
 
 ### Training Energy Estimates
 
@@ -109,16 +109,16 @@ Claude 3 models are trained on GPU clusters (NVIDIA A100/H100) via AWS.
 Typical training energy for models of this scale: ≈ 3,000 – 10,000 MWh.  
 Sources:  
 
-- [Epoch AI – *Machine Learning Trends*](https://epoch.ai/blog/machine-learning-trends)  
-- [Anthropic Responsible Scaling Policy](https://www.anthropic.com/policies/responsible-scaling-policy)
+- [Epoch AI – Machine Learning Trends (for compute/power scaling)](https://epoch.ai/trends)  
+- [Anthropic Responsible Scaling Policy](https://www-cdn.anthropic.com/872c653b2d0501d6ab44cf87f43e1dc4853e4d37.pdf)
 
 ### Water Usage
 
 Anthropic does not publish direct figures; relies on AWS cooling efficiency and water recycling policies.  
 Sources:  
 
-- [AWS Water Stewardship Report](https://sustainability.aboutamazon.com/environment/the-cloud/water-stewardship)  
-- [Anthropic Responsible Scaling Policy](https://www.anthropic.com/policies/responsible-scaling-policy)
+- [AWS Water Stewardship Report](https://sustainability.aboutamazon.com/2024-amazon-sustainability-report-aws-summary.pdf)  
+- [Anthropic Responsible Scaling Policy](https://www-cdn.anthropic.com/872c653b2d0501d6ab44cf87f43e1dc4853e4d37.pdf)
 
 ### PUE / CI Context Used in Studies
 
@@ -126,8 +126,8 @@ Sources:
 - **CI:** ≈ 0 – 0.2 kg CO₂e / kWh (based on regional renewable mix)  
 AWS targets **100 % renewable energy by 2025**.  
 Sources:  
-- [AWS Global Infrastructure Efficiency Data](https://aws.amazon.com/about-aws/sustainability/infrastructure/)  
-- [AWS Sustainability Report 2024](https://sustainability.aboutamazon.com/reporting)
+- [AWS Global Infrastructure Efficiency Data](https://sustainability.aboutamazon.com/2024-amazon-sustainability-report-aws-summary.pdf)  
+- [Anthropic Responsible Scaling Policy](https://www-cdn.anthropic.com/872c653b2d0501d6ab44cf87f43e1dc4853e4d37.pdf)
 
 ---
 
@@ -139,14 +139,13 @@ Sources:
 Sources:  
 
 - [Google AI Blog – *Introducing Gemini*](https://blog.google/technology/ai/google-gemini-ai/)  
-- [Android Developers – *Gemini Nano Overview*](https://developer.android.com/ai/gemini-nano)
 
 ### Hosting / Deployment
 
 Runs **on-device** through Android’s **AICore** system (launched in Android 14).  
 Deployed on optimized hardware (e.g., Pixel 8 Pro, Pixel 9 Series).  
 This local processing approach eliminates cloud compute energy and network latency.  
-Additional coverage: [The Verge – *Gemini Nano Arrives on Pixel 8 Pro*](https://www.theverge.com/2023/12/6/23990823/google-gemini-ai-models-nano-pro-ultra)
+Additional coverage: - [Android Developers – *Gemini Nano Overview*](https://developer.android.com/ai/gemini-nano)
 
 ### Estimated Model Size / Architecture
 
