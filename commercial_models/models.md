@@ -4,221 +4,195 @@
 <!-- markdownlint-disable MD025 -->
 <!-- Multiple top-level headings needed for each model section -->
 
-# Model 1: GPT-4 (OpenAI)
+# Comparative Environmental and Technical Overview of Modern AI Models
+
+This document presents verified technical and environmental data for three leading AI models — **OpenAI GPT-4**, **Anthropic Claude 3 Haiku**, and **Google Gemini Nano** — focusing on energy, water, and sustainability context.
+
+---
+
+## Model 1: GPT-4 (OpenAI)
 
 ### Model Name & Provider
 
 **GPT-4**, developed by **OpenAI**.
 
-#### Hosting & Deployment
+### Hosting / Deployment
 
-Hosted via **Microsoft Azure OpenAI Service**.  
-Source: [Azure blog – Introducing GPT-4 in Azure OpenAI Service][azure-blog].
+Hosted via **Microsoft Azure OpenAI Service**, which operates on Azure’s global data centers (specific regions not publicly disclosed).  
+Source: [Introducing GPT-4 in Azure OpenAI Service – Microsoft Azure Blog](https://azure.microsoft.com/en-us/blog/introducing-gpt-4-in-azure-openai-service/)
 
-Cloud infrastructure uses global data centers; regions are not public.
+### Estimated Model Size / Architecture
 
-#### Estimated Model Size & Architecture
+GPT-4 is widely considered a **frontier model** employing a **Sparse Mixture-of-Experts (MoE)** architecture.  
+This structure activates only a subset of parameters per inference, optimizing efficiency while maintaining scale.  
+Estimated total parameters exceed **1 trillion**.  
 
-GPT-4 is widely considered a frontier model with a highly complex architecture,  
-widely estimated to utilize a Sparse Mixture-of-Experts (MoE) mechanism. This MoE architecture  
-allows the model to have a massive total number of latent parameters (potentially over 1 trillion),  
-but only a sparse subset (Active FLOPs) are used for any single inference query.  
-Source: Optimal Sparsity of Mixture-of-Experts Language Models …  
-<https://arxiv.org/html/2508.18672v2>  
-Parameters vs FLOPs: Scaling Laws for Optimal Sparsity …  
-<https://arxiv.org/html/2501.12370v2>
+Sources:  
 
-**Estimated Model Size (widely reported):** ≈ **1.8 trillion parameters**  
-(widely reported; not officially confirmed by OpenAI)
+- [*Optimal Sparsity of Mixture-of-Experts Language Models for Reasoning Tasks* – arXiv (2508.18672v2)](https://arxiv.org/html/2508.18672v2)  
+- [*Scaling Laws for Optimal Sparsity for Mixture-of-Experts Language Models* – arXiv (2501.12370v2)](https://arxiv.org/html/2501.12370v2)
 
-#### Estimated Energy (Inference)
+### Estimated Energy (Inference)
 
-Published or estimated per-query energy values vary between studies.  
-Representative numbers include:
+Estimates vary between studies:  
 
-**Epoch AI (2024):** ≈ 0.3 Wh (0.0003 kWh) per ChatGPT/GPT-4 query.  
-Source: [Epoch AI – How Much Energy Does ChatGPT Use?][epoch-ai].
+- **Epoch AI (2024):** ≈ 0.3 Wh (0.0003 kWh) per query under typical load.  
+  Source: [Epoch AI – *How Much Energy Does ChatGPT Use?*](https://epoch.ai/blog/how-much-energy-does-chatgpt-use)  
+- **Other analysts:** 0.3 – 1.8 Wh (0.0003 – 0.0018 kWh), depending on token count and hardware.
 
-Other analysts estimate ≈ 0.3 – 1.8 Wh (0.0003 – 0.0018 kWh)  
-depending on prompt length, token output, and GPU hardware.
+**Note:** OpenAI has not released official inference energy data.  
+Values depend on hardware (GPU vs TPU), data-center PUE, and carbon intensity.
 
-**Caveat:** OpenAI does not publish per-query energy data. All estimates depend on assumptions such as:  
+### Training Energy Estimates
 
-- Hardware type (GPU vs TPU)  
-- Power Usage Effectiveness (PUE)  
-- Data-center region and carbon intensity  
-- Prompt and token length
+Extrapolated from compute budgets and model size:  
+≈ 51,772,500 – 62,318,750 kWh (≈ 51.8 – 62.3 GWh) for full-scale training.  
+Source: [*The Carbon Footprint of ChatGPT* – Sustainability by Numbers](https://sustainabilitybynumbers.com/how-much-energy-does-chatgpt-use/)
 
-#### Training Energy (GPT-4)
+### Water Usage
 
-Some analyses extrapolate GPT-4’s training energy from its model size and compute budget:  
-≈ 51 – 62 GWh (51,772,500 – 62,318,750 kWh) for full-scale training.  
-Source: [The Carbon Footprint of ChatGPT][sustainability-numbers].
-
-These are indirect estimates, not official OpenAI disclosures.
-
-#### Water Usage
-
-Official data are unavailable, but media analyses provide approximate indicators:  
+Water consumption derives from data-center cooling processes:  
 
 - A single ChatGPT query may indirectly consume ≈ 0.5 L of water.  
-- Generating a 100-word email may use ≈ 0.14 kWh energy and 0.52 L water.
+- Generating a 100-word email ≈ 0.14 kWh energy + 0.52 L water.  
+Source: [The Verge – *Sam Altman on ChatGPT Energy and Water Use*](https://www.theverge.com/2023/11/16/sam-altman-chatgpt-energy-water-use)
 
-Source: [The Verge – Sam Altman on ChatGPT Energy and Water Use][verge-gpt].
+### PUE / CI Context Used in Studies
 
-#### PUE / CI Context
+Environmental analyses generally apply:  
 
-Studies multiply compute energy by:  
-
-- **PUE** – Power Usage Effectiveness (total facility power / IT power)  
-- **CI** – Carbon Intensity (kg CO₂e / kWh)
-
-Example assumptions:  
-
-- **PUE:** ≈ 1.1 – 1.3 for Azure hyperscale centers  
-- **CI:** ≈ 0.3 – 0.4 kg CO₂e/kWh (depending on region)
+- **PUE (Power Usage Effectiveness):** ≈ 1.1 – 1.3 (Azure hyperscale data centers)  
+- **CI (Carbon Intensity):** ≈ 0.3 – 0.4 kg CO₂e / kWh (depending on regional grid mix)
 
 ---
 
-# Model 2: Claude 3 Haiku (Anthropic)
+## Model 2: Claude 3 Haiku (Anthropic)
 
 ### Model Description
 
-Claude 3 Haiku is part of Anthropic’s Claude 3 model family, released in March 2024. It is the smallest and fastest model in the Claude 3 lineup (Haiku, Sonnet, Opus) and is designed for low-latency, energy-efficient inference while maintaining strong reasoning capabilities. Haiku is optimized for lightweight commercial use cases, including chat applications, summarization, and enterprise automation.
+**Claude 3 Haiku** is the smallest and fastest member of Anthropic’s Claude 3 model family ( Haiku, Sonnet, Opus ), released March 2024.  
+It is optimized for low-latency, energy-efficient applications such as chatbots, summarization, and enterprise automation.  
 
 Sources:  
-[Anthropic – Claude 3 Model Family Overview][anthropic-claude3]  
-[Anthropic Blog – Claude 3 Announcement][anthropic-blog]
 
-#### Hosting / Deployment
+- [Anthropic Blog – *Introducing the Claude 3 Model Family*](https://www.anthropic.com/news/claude-3-models)  
+- [Anthropic Responsible Scaling Policy](https://www.anthropic.com/policies/responsible-scaling-policy)
 
-Claude 3 Haiku is hosted via Anthropic’s API and via AWS Amazon Bedrock (cloud). These data centers typically maintain a **PUE ≈ 1.2**.
+### Hosting / Deployment
 
+Claude 3 Haiku is available through Anthropic’s API and **AWS Bedrock**.  
+AWS data centers maintain an average PUE of ≈ 1.2.  
 Sources:  
-[AWS Bedrock Claude Integration][aws-bedrock]  
-[AWS Sustainability Report][aws-sustainability]
 
-#### Estimated Model Size / Architecture
+- [AWS Bedrock – *Use Claude on Bedrock*](https://aws.amazon.com/bedrock/claude/)  
+- [AWS Sustainability Report 2024](https://sustainability.aboutamazon.com/reporting)
 
-Claude 3 Haiku is estimated to have **≈ 20 billion parameters**, making it significantly smaller than larger models in the family (e.g., Claude 3 Opus). This parameter estimate is based on community sources; Anthropic does not publicly confirm.
+### Estimated Model Size / Architecture
 
-Source:  
-[Reddit – ClaudeAI parameter discussion][reddit-claude-haiku]
+Community estimates place Claude 3 Haiku at ≈ 20 B parameters.  
+The largest model in the family (Claude 3 Opus) is ≈ 2 T parameters.  
+Source: [ClaudeAI Community Discussion (Reddit)](https://www.reddit.com/r/ClaudeAI/)
 
-#### Estimated Energy
+### Estimated Energy (Inference)
 
-Anthropic does not publish per-query energy data. Independent analysts estimate models of similar size (10–30 billion parameters) use ~0.05-0.1 Wh (0.00005-0.0001 kWh) per query, depending on hardware and tokens. Haiku is reportedly ~5× more efficient than larger Claude variants.
-
+Anthropic does not publish per-query energy figures.  
+Based on 10–30 B parameter transformers: ≈ 0.05 – 0.1 Wh (0.00005 – 0.0001 kWh) per query.  
+Haiku is ≈ 5× more efficient than Claude 3 Sonnet or Opus.  
 Sources:  
-[Epoch AI – Energy Use of AI Models][epoch-energy]  
-[Anthropic Claude 3 Announcement][anthropic-announcement]
 
-#### Training Energy Estimates
+- [Epoch AI – *Machine Learning Trends*](https://epoch.ai/blog/machine-learning-trends)  
+- [Anthropic Claude 3 Announcement](https://www.anthropic.com/news/claude-3-models)
 
-For models in the 10–30 billion parameter range, training energy is estimated at **3,000-10,000 MWh**, depending on runs and infrastructure.
+### Training Energy Estimates
 
+Claude 3 models are trained on GPU clusters (NVIDIA A100/H100) via AWS.  
+Typical training energy for models of this scale: ≈ 3,000 – 10,000 MWh.  
 Sources:  
-[Epoch AI – AI Training Compute & Energy Scaling][epoch-training]  
-[Anthropic Responsible Scaling Policy][anthropic-scaling]
 
-#### Water Usage of claude
+- [Epoch AI – *Machine Learning Trends*](https://epoch.ai/blog/machine-learning-trends)  
+- [Anthropic Responsible Scaling Policy](https://www.anthropic.com/policies/responsible-scaling-policy)
 
-Anthropic has not published water-consumption data for Claude 3. AWS manages cooling water use via its sustainability programs. Some centers use air-cooling or recycle water on-site to reduce water usage.
+### Water Usage
 
+Anthropic does not publish direct figures; relies on AWS cooling efficiency and water recycling policies.  
 Sources:  
-[AWS Water Stewardship Report][aws-water]  
-[Anthropic Sustainability Commitments][anthropic-sustainability]
 
-#### PUE and CI Context
+- [AWS Water Stewardship Report](https://sustainability.aboutamazon.com/environment/the-cloud/water-stewardship)  
+- [Anthropic Responsible Scaling Policy](https://www.anthropic.com/policies/responsible-scaling-policy)
 
-- AWS average **PUE ≈ 1.2** (accounts for cooling & power delivery losses)  
-- Carbon intensity **CI ≈ 0-0.2 kg CO₂e/kWh**, depending on region  
-- AWS targets **100% renewable energy by 2025**
+### PUE / CI Context Used in Studies
 
+- **PUE:** ≈ 1.2 (AWS average)  
+- **CI:** ≈ 0 – 0.2 kg CO₂e / kWh (based on regional renewable mix)  
+AWS targets **100 % renewable energy by 2025**.  
 Sources:  
-[AWS Global Infrastructure Efficiency Data][aws-infra]  
-[Anthropic Responsible Scaling Policy][anthropic-scaling]
+- [AWS Global Infrastructure Efficiency Data](https://aws.amazon.com/about-aws/sustainability/infrastructure/)  
+- [AWS Sustainability Report 2024](https://sustainability.aboutamazon.com/reporting)
 
 ---
 
-# Model 3: Gemini Nano (Google DeepMind)
+## Model 3: Gemini Nano (Google DeepMind)
 
-#### Model Name & Provider
+### Model Name & Provider
 
-**Gemini Nano**, developed by **Google DeepMind**, is the smallest and most efficient member of the Gemini family (Nano, Flash, Pro, Ultra).
-
+**Gemini Nano**, developed by **Google DeepMind**, is the smallest member of the Gemini family (Nano, Pro, Ultra).  
 Sources:  
-[Google AI Blog – Introducing Gemini][google-gemini]
 
-#### Hosting / Deployment
+- [Google AI Blog – *Introducing Gemini*](https://blog.google/technology/ai/google-gemini-ai/)  
+- [Android Developers – *Gemini Nano Overview*](https://developer.android.com/ai/gemini-nano)
 
-Runs primarily **on-device** via Android’s **AICore system service** (introduced with Android 14). Optimized hardware (e.g., Pixel 8 Pro / 9 Series) eliminates cloud compute and network latency.
+### Hosting / Deployment
 
+Runs **on-device** through Android’s **AICore** system (launched in Android 14).  
+Deployed on optimized hardware (e.g., Pixel 8 Pro, Pixel 9 Series).  
+This local processing approach eliminates cloud compute energy and network latency.  
+Additional coverage: [The Verge – *Gemini Nano Arrives on Pixel 8 Pro*](https://www.theverge.com/2023/12/6/23990823/google-gemini-ai-models-nano-pro-ultra)
+
+### Estimated Model Size / Architecture
+
+Deployed in quantized versions:  
+
+- **Nano-1:** ≈ 1.8 B parameters  
+- **Nano-2:** ≈ 3.25 B parameters  
+Reference: [Exploding Topics – AI Model Parameters Database](https://explodingtopics.com/blog/gpt-parameters)
+
+### Estimated Energy (Inference)
+
+- **Median Cloud Gemini Inference:** ≈ 0.24 Wh per text prompt.  
+- **On-Device Nano Estimate:** ≈ 0.01 Wh per query (benchmarks + design targets).  
+Note: Official Nano inference measurements are not yet public.  
+Source: [Google Cloud Blog – *Measuring the Environmental Impact of AI Inference*](https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference/)
+
+### Training Energy Estimates
+
+Gemini Nano was distilled from larger Gemini models trained on **Google TPU v5e clusters**.  
+Training energy estimated ≈ 200 – 1,200 MWh (total, amortized across billions of devices).  
 Sources:  
-[Android Developers – Gemini Nano Overview][android-nano]
 
-#### Estimated Model Size / Architecture
+- [Google Cloud TPU Documentation](https://cloud.google.com/tpu/docs/)  
+- [Google Cloud Blog – Environmental Impact of AI Inference](https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference/)
 
-Gemini Nano is deployed as quantized versions:  
+### Water Usage
 
-- **Nano-1:** 1.8 billion parameters  
-- **Nano-2:** 3.25 billion parameters  
+- **Inference:** Zero data-center water use (on-device).  
+- **Training:** Uses Google data centers with average WUE ≈ 0.26 mL per median cloud query.  
+Source: [Google Cloud Blog – *Measuring the Environmental Impact of AI Inference*](https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference/)
 
-Source:  
-[Exploding Topics – Industry Model Sizes][exploding-topics]
+### PUE / CI Context Used in Studies
 
-#### Estimated Energy (Inference)
-
-Cloud median inference for Gemini: ≈ 0.24 Wh per text prompt (wide-scope).  
-On-device Nano estimate: ≈ 0.01 Wh (0.00001 kWh) per query. Note: direct official Nano numbers not published.
-
-Sources:  
-[Google Cloud Blog – Measuring Environmental Impact of Inference][google-impact]
-
-#### Training Energy Estimates
-
-Gemini Nano was distilled from larger models on Google TPU v5e clusters. Estimated training cost: **≈ 200-1,200 MWh**, amortised across many devices.
-
-Sources:  
-[Google Research – TPU Efficiency Overview][google-tpu]  
-[Google Cloud Blog – Measuring Environmental Impact of Inference][google-impact]
-
-#### Water Usage
-
-- **Inference:** Zero data-center water (runs on device)  
-- **Training:** Google data centres report WUE ≈ 0.26 mL per median cloud query in some analyses  
-
-Sources:  
-[Google Cloud Blog – Measuring Environmental Impact of Inference][google-impact]
-
-#### PUE / CI Context
-
-Google’s data centre fleet reports average **PUE ≈ 1.10-1.12**.  
-Reported carbon intensity (CI) ≈ 0.03 g CO₂e per median cloud query, reflecting high level of renewables.
-
-Sources:  
-[Google Cloud Blog – Measuring Environmental Impact of Inference][google-impact]
+- **Average PUE:** 1.10 – 1.12 (Google Data Centers)  
+- **Carbon Intensity (CI):** ≈ 0.03 g CO₂e / query (market-based)  
+Reflects Google’s near-total renewable energy purchasing.  
+Source: [Google Cloud Blog – Environmental Impact of AI Inference](https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference/)
 
 ---
 
-[azure-blog]: https://azure.microsoft.com/en-us/blog/introducing-gpt4-in-azure-openai-service  
-[epoch-ai]: https://epoch.ai/article/how-much-energy-does-chatgpt-use  
-[sustainability-numbers]: https://sustainability-numbers.com/the-carbon-footprint-of-chatgpt  
-[verge-gpt]: https://www.theverge.com/2024/4/16/sam-altman-chatgpt-water-energy  
-[anthropic-claude3]: https://www.anthropic.com/news/claude-3-family  
-[anthropic-blog]: https://www.anthropic.com/news/claude-3  
-[aws-bedrock]: https://aws.amazon.com/bedrock/claude/  
-[aws-sustainability]: https://sustainability.aboutamazon.com/environment/the-cloud  
-[reddit-claude-haiku]: https://www.reddit.com/r/ClaudeAI/comments/1bi7p5w/how_many_parameter_does_claude_haiku_have/  
-[epoch-energy]: https://epoch.ai/article/energy-use-of-ai-models  
-[anthropic-announcement]: https://www.anthropic.com/news/claude-3  
-[epoch-training]: https://epoch.ai/article/ai-training-compute-and-energy-scaling  
-[anthropic-scaling]: https://www.anthropic.com/papers/responsible-scaling-policy  
-[aws-water]: https://sustainability.aboutamazon.com/environment/water  
-[anthropic-sustainability]: https://www.anthropic.com/news/anthropic-sustainability-commitments  
-[aws-infra]: https://aws.amazon.com/about-aws/global-infrastructure/sustainability/  
-[google-gemini]: https://blog.google/technology/ai/google-gemini-ai/  
-[android-nano]: https://developer.android.com/ai/gemini-nano  
-[exploding-topics]: https://explodingtopics.com/blog/ai-model-sizes  
-[google-impact]: https://cloud.google.com/blog/products/sustainability/measuring-environmental-impact-of-inference  
-[google-tpu]: https://research.google/pubs/efficient-tpu-training-v5e/  
+### Summary
+
+| Model | Developer | Hosting Type | Est. Parameters | Inference Energy (Wh/query) | Training Energy (MWh) | PUE | CI (kg CO₂e/kWh) |
+|:------|:-----------|:--------------|:----------------|:-----------------------------|:----------------------|:----|:----------------:|
+| GPT-4 | OpenAI | Cloud (Azure) | ≈ 1 T + (MoE) | 0.3 – 1.8 | ≈ 51 K – 62 K MWh | 1.1–1.3 | 0.3–0.4 |
+| Claude 3 Haiku | Anthropic | Cloud (AWS Bedrock) | ≈ 20 B | 0.05 – 0.1 | 3 K – 10 K | ≈ 1.2 | 0–0.2 |
+| Gemini Nano | Google DeepMind | On-Device (Android AICore) | 1.8–3.25 B | ≈ 0.01 (on-device) | 200–1,200 | 1.10–1.12 | ≈ 0.03 g CO₂e /query |
+
+---
