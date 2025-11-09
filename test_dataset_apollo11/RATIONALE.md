@@ -42,6 +42,8 @@ The excerpted length balances comprehensiveness with practical testability.
 
 ## Why These Excerpted Passages?  
 
+![image](images/test-selection.png)
+
 **Continuous Narrative:**
 
 Selected passages flow from descent through surface activities, forming a natural
@@ -64,7 +66,7 @@ and analytical reasoning.
 
 **Verified Coverage:**
 
-All 15 test prompts confirmed answerable with excerpted passages through
+All 21 test prompts confirmed answerable with excerpted passages through
 preliminary testing.
 
 **Length Management:**
