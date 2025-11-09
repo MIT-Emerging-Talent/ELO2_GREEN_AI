@@ -41,9 +41,18 @@ JSON file.
 
 ## Models Used
 
-* **LaMini-Flan-T5-248M**: It is a Local LLM and it is a distilled version of
-Google's Flan-T5, optimized for lightweight text generation tasks.
+* **LaMini-Flan-T5-248M**: This model is one of the LaMini-LM model series in
+paper "LaMini-LM: A Diverse Herd of Distilled Models from Large-Scale
+Instructions". It is a Local LLM and it is a distilled version of
+Google's Flan-T5, fine-tuned on LaMini-instruction dataset for instruction
+fine-tuning, it's optimized for lightweight text generation tasks.
 Used here for reasoning, summarization, and RAG response generation.
+Its knowledge is distilled from large language models by performing
+sentence/offline distillation (Kim and Rush, 2016). A total of
+2.58M pairs of instructions and responses was generated using gpt-3.5-turbo
+based on several existing resources of prompts, including self-instruct
+(Wang et al., 2022), P3 (Sanh et al., 2022), Flan (Longpre et al., 2023) and
+Alpaca (Taori et al., 2023).
 * **all-MiniLM-L6-v2**: It as an Embedding model and it is a compact sentence-transformer
 model used to convert text chunks into numerical vector embeddings for
 semantic search and retrieval.
