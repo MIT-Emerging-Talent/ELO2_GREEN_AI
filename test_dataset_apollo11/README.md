@@ -85,6 +85,8 @@ reasoning, RAG, paraphrasing and creative generation tasks.
 
 ## 📝 Test Structure
 
+![image](images/evaluation-process.png)
+
 The test includes **21 standardized prompts** distributed across **five categories**.
 In addition, a **Master Instruction** and **task-specific guidance prompts** are
 provided to ensure consistency and clarity across all tasks.

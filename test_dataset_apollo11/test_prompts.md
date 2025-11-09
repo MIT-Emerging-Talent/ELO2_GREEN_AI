@@ -3,6 +3,8 @@
 This document contains **21 standardized test prompts** for evaluating language
 models using the Apollo 11 lunar landing context.
 
+![image](images/prompt-sequence.png)
+
 Please follow the instructions in order:
 first **Master Prompt**,  
 then **task-specific instructions**,  
