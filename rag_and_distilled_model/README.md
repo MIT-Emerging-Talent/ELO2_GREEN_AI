@@ -31,11 +31,20 @@ JSON file.
  Rag + Distilled Model/
 ├── Apollo11_rag&distilled.ipynb   ← Main Jupyter Notebook
 ├── README.md                      ← Project documentation
+├── model_answers.md               ← Generated answers for all prompts
+├── emissions_report.md            ← Energy usage and carbon emissions report
 └── data/
-    ├── apollo11_docs.json     ← Apollo 11 text dataset and evaluation prompts
+    ├── test_data.json     ← Apollo 11 text dataset and evaluation prompts
     └── chroma_db/             ← Auto-created vector database folder
                                   (It will appear after you run it)
-```
+````
+
+> **Note:** `model_answers.md` contains the model’s generated answers for all
+prompts, organized by task type (Summarization, Reasoning, RAG, Paraphrasing,
+Creative Generation) along with latency information. This file is intended
+for inspection, reporting, or downstream evaluation.
+> `emissions.csv` contains energy consumption and CO2 emissions data
+for model loading, embeddings, and inference for all prompts.
 
 ---
 
@@ -65,8 +74,12 @@ or CPU execution.
 ## Notes
 
 * The ChromaDB folder (data/chroma_db/) is automatically generated when you first
-run the document loader.
+  run the document loader.
 * You can safely delete it to rebuild embeddings later.
 * The notebook does not require an external .txt file — all content is inside
-the JSON.
+  the JSON.
 * The model automatically detects whether to use GPU (torch.cuda.is_available()).
+* **Model answers:** The generated responses for all prompts are saved in
+  `model_answers.md` for easy reference and evaluation.
+* Emissions report: Energy consumption and carbon emissions data for model
+   loading, embeddings, and inference are saved in `emissions.csv`.
