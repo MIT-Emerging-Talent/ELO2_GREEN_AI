@@ -6,16 +6,17 @@ This is the unified test dataset for comparing different AI models (commercial,
 distilled, SLM, and RAG systems) in the ELO2 - Green AI project.
 
 The dataset consists of selected passages from Wikipedia's Apollo 11 article,
-accompanied by 15 standardized prompts testing summarization, reasoning, and
-retrieval-augmented generation capabilities.
+accompanied by 21 standardized prompts testing summarization, reasoning,
+retrieval, paraphrasing, and creative generation capabilities.
 
 ---
 
 ## 📂 Dataset Contents
 
-- **[README.md][readme]** - This file (overview and instructions)
-- **[source_text.txt][source]** - Apollo 11 excerpted text (~1,400 words, plain text)
-- **[test_prompts.md][prompts]** - 15 test prompts (readable format)
+- **[README.md][readme]** - This file (overview and instructions)  
+- **[source_text.txt][source]** - Apollo 11 excerpted text
+(~1,400 words, plain text)  
+- **[test_prompts.md][prompts]** - All test prompts (readable format)  
 - **[test_data.json][json]** - Complete dataset (structured format for automated
   testing)
 - **[RATIONALE.md][rationale]** - Detailed explanation of selection decisions
@@ -35,8 +36,7 @@ team discussions, see the **[team briefing](https://docs.google.com/document/d/1
 
 **Source:** Wikipedia - Apollo 11 article  
 **URL:** <https://en.wikipedia.org/wiki/Apollo_11>  
-**Permanent Link:**
-<https://en.wikipedia.org/w/index.php?title=Apollo_11&oldid=1252473845>  
+**Link:**<https://en.wikipedia.org/w/index.php?title=Apollo_11&oldid=1252473845>
 **Revision ID:** 1252473845 (Wikipedia internal revision number)  
 **Date Accessed:** October 22, 2025  
 **Sections:** Excerpted passages from "Lunar landing" and "Lunar surface
@@ -56,7 +56,7 @@ operations"
 
 - Individual sentences are unchanged; some paragraphs omitted for length management.
 - Complete original sections total ~3,800 words; excerpted to ~1,400 words for
-practical testing while maintaining all information necessary for the 15 test prompts.
+practical testing while maintaining all information necessary for the 21 test prompts.
 
 📌 See [source_text.txt][source] for the complete excerpted text.
 
@@ -72,12 +72,12 @@ technical terms)
 be tested
 - ✅ **Narrative structure** - Clear sequence from descent through surface
 activities
-- ✅ **All prompts answerable** - 15 test prompts verified to work with selected
+- ✅ **All prompts answerable** - 21 test prompts verified to work with selected
 passages
 
 The excerpts cover the dramatic descent and landing sequence, followed by
 moonwalk activities, ensuring comprehensive testing across summarization,
-reasoning, and RAG tasks.
+reasoning, RAG, paraphrasing and creative generation tasks.
 
 📌 See [RATIONALE.md][rationale] for detailed selection methodology.
 
@@ -85,34 +85,64 @@ reasoning, and RAG tasks.
 
 ## 📝 Test Structure
 
-**15 Standardized Prompts** across three categories:
+![image](images/evaluation-process.png)
 
-### Summarization (5 prompts)
+The test includes **21 standardized prompts** distributed across **five categories**.
+In addition, a **Master Instruction** and **task-specific guidance prompts** are
+provided to ensure consistency and clarity across all tasks.
 
-Tests model's ability to condense and extract key information
+### Prompt Delivery Overview
+
+The test follows this sequence:  
+
+**1. The Master Instruction** is used **once at the beginning** of the test.
+**2.** Before each category, a **task-specific guidance prompt** clarifies how
+the model should approach that task type (e.g., reasoning, summarization, retrieval).
+**3.** Then, the **individual prompts for that category** are presented in order
+of increasing difficulty.
+
+### Prompt Categories
+
+#### 1. Summarization (5 prompts)  
+
+Tests model's ability to condense and extract key information.
 
 **Difficulty:** Easy → Medium → Hard  
-**Examples:** Main events, challenges faced, activities performed, equipment
-deployed
+**Examples:** Main events, challenges faced, activities performed, equipment deployed
 
-### Reasoning (5 prompts)
+#### 2. Reasoning (5 prompts)  
 
-Tests model's ability to analyze, infer, and make connections
+Tests model's ability to analyze, infer, and make connections.
 
-**Types:** Causal reasoning, hypothetical scenarios, interpretation, deep
-analysis  
+**Types:** Causal reasoning, hypothetical scenarios, interpretation,
+deep analysis  
 **Examples:** Why did computer alarms occur? What if Armstrong hadn't taken
 manual control? What does Margaret Hamilton's statement reveal?
 
-### RAG - Retrieval (5 prompts)
+#### 3. RAG – Retrieval (5 prompts)  
 
-Tests model's ability to retrieve specific information from source text
+Tests model's ability to retrieve specific information from source text.
 
 **Types:** Times, quotes, numbers, lists, complex multi-part facts  
 **Examples:** Landing time? Material collected? Scientific instruments deployed?
 
-📌 See [test_prompts.md][prompts] for the readable format, or [test_data.json][json]
-for its structured data version.
+#### 4. Paraphrasing (3 prompts)  
+
+Tests model's ability to restate information in its own words.
+
+**Difficulty:** Easy → Medium  
+**Examples:** Describe computer alarms, Armstrong’s teamwork, or sample collection.
+
+#### 5. Creative Generation (3 prompts)  
+
+Tests model's interpretive and imaginative capabilities.
+
+**Difficulty:** Easy → Medium  
+**Examples:** Imagine being in Mission Control. What does landing show about courage?
+How did it change Earth?
+
+📌 See [test_prompts.md][prompts] for the readable version with full prompt texts,
+or [test_data.json][json] for its structured data version.
 
 ---
 
@@ -120,16 +150,18 @@ for its structured data version.
 
 ### General Instructions
 
-- **All 15 prompts** should be tested across all models to ensure a fair comparison.
+- **All 21 prompts** should be tested across all models to ensure a fair comparison.
+- The **Master Instruction** and any **task-specific guidance prompts** should
+  be applied as described in the Test Structure section.
 - Some prompts can be more challenging for smaller models,
 but attempting all prompts provides comprehensive evaluation data.
 
 **Testing Protocol:**
 
-**1.** Use the source text from **[source_text.txt][source]** exactly
-as provided  
-**2.** Use all 15 prompts from **[test_prompts.md][prompts]**
-without modification  
+**1.** Use the source text from **[source_text.txt][source]**
+exactly as provided
+**2.** Use all prompts from **[test_prompts.md][prompts]** without
+modification
 **3.** *(Optional)* Use **[test_data.json][json]** for automated or scripted
    testing workflows  
 **4.** Record responses for each prompt with model configuration details  
@@ -144,9 +176,15 @@ For each prompt, record:
 **1. Accuracy** - Is the answer factually correct?  
 **2. Completeness** - Are all key points covered?  
 **3. Specificity** - Are specific details included (times, names, numbers)?  
-**4. Reasoning Quality** - For reasoning prompts, is the logic sound and
-   well-supported?  
+**4. Reasoning Quality** - Is the logic sound and well-supported?  
+**5. Paraphrasing Quality** - Is information reworded(not copied)  
+while maintaining accuracy?
+**6. Creative Generation Quality** - Is the response coherent, relevant, and text-inspired?
+**7. Instruction Following** - Does the model follow the master or task-spesific
+instructions (no source mentions, concise, natural)?
 
+**Note:** Creative generation prompts have no single correct answer. Evaluate
+based on coherence, relevance to text, and quality of reasoning.  
 Maintain consistent evaluation criteria across all models for fair comparison.
 
 ---
