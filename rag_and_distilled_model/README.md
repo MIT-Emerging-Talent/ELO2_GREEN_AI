@@ -32,7 +32,7 @@ JSON file.
 ├── Apollo11_rag&distilled.ipynb   ← Main Jupyter Notebook
 ├── README.md                      ← Project documentation
 ├── model_answers.md               ← Generated answers for all prompts
-├── emissions_report.md            ← Energy usage and carbon emissions report
+├── emissions.csv            ← Energy usage and carbon emissions report
 └── data/
     ├── test_data.json     ← Apollo 11 text dataset and evaluation prompts
     └── chroma_db/             ← Auto-created vector database folder
