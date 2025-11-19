@@ -1,9 +1,0 @@
----
-Question: Summarize the main events during the Apollo 11 lunar landing in 3 sentences.
-Answer: Error: Could not get response from API.
----
-Question: Summarize the main events during the Apollo 11 lunar landing in 3 sentences.
-Answer: Error: Could not get response from API.
----
-Question: Why did the computer alarms (1201 and 1202) occur during the descent?
-Answer: Error: Could not get response from API.
