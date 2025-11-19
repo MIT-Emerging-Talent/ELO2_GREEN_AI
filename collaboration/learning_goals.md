@@ -1,5 +1,0 @@
-# Learning Goals
-
-## Collective
-
-## Individual
