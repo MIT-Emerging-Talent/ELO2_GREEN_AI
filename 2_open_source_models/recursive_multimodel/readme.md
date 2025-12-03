@@ -137,34 +137,99 @@ This avoids adding hallucinations and ensures correctness.
 
 You can include your own examples below.
 
-### Example 1: [Your Question Here]
+### Example: [Summarization]
 
 - **Prompt:**  
-    > **Paste your question here**
+  > In your own words, describe what happened when the computer alarms
+  appeared during the landing.
 
-- **Draft Answer:**  
-    > **Paste model output here**
+### **Cycle 1:**
 
-- **Critic Response:**  
-    > **Paste critic evaluation here**
+- **Draft Answer:**
+  >As the descent began, Armstrong and Aldrin found themselves
+  passing landmarks on the surface two or three seconds early. The problem could
+  have been mascons, concentrations of high mass in a region or regions of the
+  Moon's crust that contains a gravitational anomaly, potentially altering Eagle's
+  trajectory. Five minutes into the descent, the burn and 6,000 feet (1,800 m)
+  above the surface of the moon, the LM guidance computer (LGC) distracted the
+  crew with the first of several unexpected 1201 and 1202 program alarms. Inside
+  Mission Control Center, computer engineer Jack Garman told Guidance Officer
+  Steve Bales it was safe to continue the descent. The program alarm indicated
+  "executive overflows," meaning the guidance computer could not complete all its
+  tasks in real-time and had to postpone some of them. Margaret Hamilton, the
+  Director of Apollo Flight Computer Programming at the MIT Charles Stark Draper
+  Laboratory later recalled: "To blame the computer for the Apollo 11 problems is
+  like blaming the person who spots a fire and calls the fire department.
+  Actually, the computer was programmed to do more than recognize error
+  conditions. A complete set of recovery programs was incorporated into the
+  software. The software's action, in this case, was to eliminate lower priority
+  tasks and re-establish the more important ones. The computer, rather than almost
+  forcing an abort, prevented an abourt. If the computer hadn't recognized this
+  problem and took recovery action, I doubt if Apollo 11 would have been the
+  successful Moon landing it was.
 
-- **Refined Answer (Final):**  
-    > **Paste LAmini rewrite here**
+- **Critic Response:**
 
-- **My Analysis:**  
-    > [Your notes]
+  >- The draft does not accurately describe the computer alarms that appeared
+  during the landing. The draft should include the specific computer alarms
+  (1201 and 1202) and the crew's reaction to them.
+  >- The draft does not mention the specific actions taken by the crew in
+  response to the computer alarms, such as Armstrong taking semi-automatic control.
+  >- The draft does not include the details about Mission Control's role in
+  addressing the alarms and the reassurance given to the crew.
+  >- The draft does not mention the post-mission analysis showing the real fuel
+  remaining was probably closer to 50 seconds, which is critical information.
 
----
+### **Cycle 2:**
 
-### Example 2: [Your Question Here]
+- **Draft Answer:**
+  >The LM guidance computer (LGC) distracted the crew with the first
+  of several unexpected 1201 and 1202 program alarms during the Apollo 11 mission.
+  The program alarm indicated "executive overflows," meaning the guidance computer
+  could not complete all its tasks in real-time and had to postpone some of them.
+  The recovery programs were incorporated into the software, eliminating lower
+  priority tasks and re-establishing the more important ones. Margaret Hamilton,
+  the Director of Apollo Flight Computer Programming at the MIT Charles Stark
+  Draper Laboratory later recalled that to blame the computer for the Apollo 11,
+  problems is like blaming the person who spots a fire and calls the fire
+  department. Actually, the computer was programmed to do more than recognize
+  error conditions. The software's action, in this case, was to eliminate lower
+  priority jobs and regain the more significant ones. If the computer hadn't
+  recognized this problem and took recovery action, I doubt if Apollo 11 would
+  have been the successful Moon landing it was.
 
-(Same structure)
+- **Critic Response:**
 
----
+  >- The draft does not mention the specific computer alarms (1201 and 1202)
+  that appeared during the landing.
+  >- The draft does not reference the exact timing of the alarms (five minutes
+  into the descent, 6,000 feet above the surface).
+  >- The draft does not include the specific actions taken by Mission Control
+  to address the alarms.
+  >- The draft does not mention the critical role of the guidance computer in
+  safely continuing the descent despite the alarms.
+  >- The draft does not include the perspective of the astronauts experiencing
+  the alarms.
+  >- The draft does not provide the exact quote from Jack Garman to Steve Bales.
+  >- The draft does not mention Margaret Hamilton's role or her specific
+  recollection of the event.
 
-### Example 3: [Your Question Here]
+- **Refined Answer (Final):**
 
-(Same structure)
+  >The LM guidance computer (LGC) distracted the crew with the first
+  of several unexpected 1201 and 1202 program alarms during the Apollo 11 mission.
+  The program alarm indicated "executive overflows," meaning the guidance computer
+  could not complete all its tasks in real-time and had to postpone some of them.
+  The recovery programs were incorporated into the software, eliminating lower
+  priority tasks and re-establishing the more important ones. Margaret Hamilton,
+  the Director of Apollo Flight Computer Programming at the MIT Charles Stark
+  Draper Laboratory later recalled that to blame the computer for the Apollo 11,
+  problems is like blaming the person who spots a fire and calls the fire
+  department. Actually, the computer was programmed to do more than recognize
+  error conditions. The software's action, in this case, was to eliminate lower
+  priority jobs and regain the more significant ones. If the computer hadn't
+  recognized this problem and took recovery action, I doubt if Apollo 11 would
+  have been the successful Moon landing it was.
 
 ---
 
