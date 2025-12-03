@@ -1,8 +1,0 @@
-huggingface-hub
-sentence-transformers
-transformers
-torch
-faiss-cpu
-python-dotenv
-accelerate
-numpy
