@@ -40,85 +40,89 @@ This diversity of perspectives is essential to our research.
 
 What is your Nationality?
 
+-
+
 What is your native (first) language?
 
-English
+- English
 
-Spanish
+- Spanish
 
-German
+- German
 
-Arabic
+- Arabic
 
-Turkish
+- Turkish
 
-Chinese
+- Chinese
 
-Russian
+- Russian
 
-Other:
+- Other:
 
 How would you rate your English proficiency?
 
-Native speaker
+- Native speaker
 
-Fluent (C2 - can understand everything easily)
+- Fluent (C2 - can understand everything easily)
 
-Advanced (C1 - can understand complex text)
+- Advanced (C1 - can understand complex text)
 
-Intermediate (B1-B2 - can understand most everyday texts)
+- Intermediate (B1-B2 - can understand most everyday texts)
 
-Basic (A1-A2 - still learning)
+- Basic (A1-A2 - still learning)
 
 What is your current Occupation or field of study?
 e.g., Computer Science Student, Software Engineer, Teacher, Researcher, Marketing
 
+-
+
 How often do you use AI tools (e.g., ChatGPT, Claude, Gemini, Copilot, etc.)?
 
-Daily
+- Daily
 
-Several times a week
+- Several times a week
 
-Once a week
+- Once a week
 
-A few times a month
+- A few times a month
 
-Rarely
+- Rarely
 
-Never
+- Never
 
 What do you primarily use AI tools for? (select all that apply)
 
-Writing and editing assistance
+- Writing and editing assistance
 
-Research and information gathering
+- Research and information gathering
 
-Coding and programming
+- Coding and programming
 
-Creative work (stories, art, brainstorming)
+- Creative work (stories, art, brainstorming)
 
-Learning and education
+- Learning and education
 
-Work or professional tasks
+- Work or professional tasks
 
-Translation or language learning
+- Translation or language learning
 
-Personal use or entertainment
+- Personal use or entertainment
 
-I don't use AI tools
+- I don't use AI tools
 
-Other:
+- Other:
 
 Are you familiar with the difference between open-source and commercial AI
 models?
 
-Yes, very familiar
+- Yes, very familiar
 
-Somewhat familiar
+- Somewhat familiar
 
-I've heard of it but don't know details
+- I've heard of it but don't know details
 
-No, not familiar
+- No, not familiar
 
 ---
 
@@ -170,49 +174,49 @@ complete set of recovery programs were incorporated into the software.
 
 Which text do you prefer? Which one is better in you opinion?
 
-Text A
+- Text A
 
-Text B
+- Text B
 
-I'm not sure / Can't tell the difference
+- I'm not sure / Can't tell the difference
 
 **Question 2:**
 
 Can you identify which model generated which text?
 
-Text A is open-source model, Text B is commercial model
+- Text A is open-source model, Text B is commercial model
 
-Text A is commercial model, Text B is open-source model
+- Text A is commercial model, Text B is open-source model
 
-Both are commercial models
+- Both are commercial models
 
-Both are open-source models
+- Both are open-source models
 
-I'm not sure
+- I'm not sure
 
 **Question 3:**
 
 Please rate Text A on the following criteria (1 = Poor, 5 = Excellent)
 
-Accuracy:How factually correct is the information? 1-5
+- Accuracy:How factually correct is the information? 1-5
 
-Clarity: How clear and easy to understand? 1-5
+- Clarity: How clear and easy to understand? 1-5
 
-Relevance:How well does it answer the question? 1-5
+- Relevance:How well does it answer the question? 1-5
 
-Faithfulness:How true to the source material? 1-5
+- Faithfulness:How true to the source material? 1-5
 
 **Question 4:**
 
 Please rate Text B on the following criteria (1 = Poor, 5 = Excellent)
 
-Accuracy:How factually correct is the information? 1-5
+- Accuracy:How factually correct is the information? 1-5
 
-Clarity: How clear and easy to understand? 1-5
+- Clarity: How clear and easy to understand? 1-5
 
-Relevance:How well does it answer the question? 1-5
+- Relevance:How well does it answer the question? 1-5
 
-Faithfulness:How true to the source material? 1-5
+- Faithfulness:How true to the source material? 1-5
 
 #### TASK 1.2 - Task type: Summarization
 
@@ -237,49 +241,49 @@ experiment.
 
 Which text do you prefer? Which one is better in you opinion?
 
-Text A
+- Text A
 
-Text B
+- Text B
 
-I'm not sure / Can't tell the difference
+- I'm not sure / Can't tell the difference
 
 **Question 2:**
 
 Can you identify which model generated which text?
 
-Text A is open-source model, Text B is commercial model
+- Text A is open-source model, Text B is commercial model
 
-Text A is commercial model, Text B is open-source model
+- Text A is commercial model, Text B is open-source model
 
-Both are commercial models
+- Both are commercial models
 
-Both are open-source models
+- Both are open-source models
 
-I'm not sure
+- I'm not sure
 
 **Question 3:**
 
 Please rate Text A on the following criteria (1 = Poor, 5 = Excellent)
 
-Accuracy:How factually correct is the information? 1-5
+- Accuracy:How factually correct is the information? 1-5
 
-Clarity: How clear and easy to understand? 1-5
+- Clarity: How clear and easy to understand? 1-5
 
-Relevance:How well does it answer the question? 1-5
+- Relevance:How well does it answer the question? 1-5
 
-Faithfulness:How true to the source material? 1-5
+- Faithfulness:How true to the source material? 1-5
 
 **Question 4:**
 
 Please rate Text B on the following criteria (1 = Poor, 5 = Excellent)
 
-Accuracy:How factually correct is the information? 1-5
+- Accuracy:How factually correct is the information? 1-5
 
-Clarity: How clear and easy to understand? 1-5
+- Clarity: How clear and easy to understand? 1-5
 
-Relevance:How well does it answer the question? 1-5
+- Relevance:How well does it answer the question? 1-5
 
-Faithfulness:How true to the source material? 1-5
+- Faithfulness:How true to the source material? 1-5
 
 ---
 
@@ -314,49 +318,49 @@ with only seconds of fuel remaining, showcasing precise teamwork and decisive ac
 
 Which text do you prefer? Which one is better in you opinion?
 
-Text A
+- Text A
 
-Text B
+- Text B
 
-I'm not sure / Can't tell the difference
+- I'm not sure / Can't tell the difference
 
 **Question 2:**
 
 Can you identify which model generated which text?
 
-Text A is open-source model, Text B is commercial model
+- Text A is open-source model, Text B is commercial model
 
-Text A is commercial model, Text B is open-source model
+- Text A is commercial model, Text B is open-source model
 
-Both are commercial models
+- Both are commercial models
 
-Both are open-source models
+- Both are open-source models
 
-I'm not sure
+- I'm not sure
 
 **Question 3:**
 
 Please rate Text A on the following criteria (1 = Poor, 5 = Excellent)
 
-Accuracy:How factually correct is the information? 1-5
+- Accuracy:How factually correct is the information? 1-5
 
-Clarity: How clear and easy to understand? 1-5
+- Clarity: How clear and easy to understand? 1-5
 
-Relevance:How well does it answer the question? 1-5
+- Relevance:How well does it answer the question? 1-5
 
-Faithfulness:How true to the source material? 1-5
+- Faithfulness:How true to the source material? 1-5
 
 **Question 4:**
 
 Please rate Text B on the following criteria (1 = Poor, 5 = Excellent)
 
-Accuracy:How factually correct is the information? 1-5
+- Accuracy:How factually correct is the information? 1-5
 
-Clarity: How clear and easy to understand? 1-5
+- Clarity: How clear and easy to understand? 1-5
 
-Relevance:How well does it answer the question? 1-5
+- Relevance:How well does it answer the question? 1-5
 
-Faithfulness:How true to the source material? 1-5
+- Faithfulness:How true to the source material? 1-5
 
 ---
 
@@ -387,49 +391,49 @@ proceed safely.
 
 Which text do you prefer? Which one is better in you opinion?
 
-Text A
+- Text A
 
-Text B
+- Text B
 
-I'm not sure / Can't tell the difference
+- I'm not sure / Can't tell the difference
 
 **Question 2:**
 
 Can you identify which model generated which text?
 
-Text A is open-source model, Text B is commercial model
+- Text A is open-source model, Text B is commercial model
 
-Text A is commercial model, Text B is open-source model
+- Text A is commercial model, Text B is open-source model
 
-Both are commercial models
+- Both are commercial models
 
-Both are open-source models
+- Both are open-source models
 
-I'm not sure
+- I'm not sure
 
 **Question 3:**
 
 Please rate Text A on the following criteria (1 = Poor, 5 = Excellent)
 
-Accuracy:How factually correct is the information? 1-5
+- Accuracy:How factually correct is the information? 1-5
 
-Clarity: How clear and easy to understand? 1-5
+- Clarity: How clear and easy to understand? 1-5
 
-Relevance:How well does it answer the question? 1-5
+- Relevance:How well does it answer the question? 1-5
 
-Faithfulness:How true to the source material? 1-5
+- Faithfulness:How true to the source material? 1-5
 
 **Question 4:**
 
 Please rate Text B on the following criteria (1 = Poor, 5 = Excellent)
 
-Accuracy:How factually correct is the information? 1-5
+- Accuracy:How factually correct is the information? 1-5
 
-Clarity: How clear and easy to understand? 1-5
+- Clarity: How clear and easy to understand? 1-5
 
-Relevance:How well does it answer the question? 1-5
+- Relevance:How well does it answer the question? 1-5
 
-Faithfulness:How true to the source material? 1-5
+- Faithfulness:How true to the source material? 1-5
 
 ---
 
@@ -455,49 +459,49 @@ and unable to complete all its real-time tasks.
 
 Which text do you prefer? Which one is better in you opinion?
 
-Text A
+- Text A
 
-Text B
+- Text B
 
-I'm not sure / Can't tell the difference
+- I'm not sure / Can't tell the difference
 
 **Question 2:**
 
 Can you identify which model generated which text?
 
-Text A is open-source model, Text B is commercial model
+- Text A is open-source model, Text B is commercial model
 
-Text A is commercial model, Text B is open-source model
+- Text A is commercial model, Text B is open-source model
 
-Both are commercial models
+- Both are commercial models
 
-Both are open-source models
+- Both are open-source models
 
-I'm not sure
+- I'm not sure
 
 **Question 3:**
 
 Please rate Text A on the following criteria (1 = Poor, 5 = Excellent)
 
-Accuracy:How factually correct is the information? 1-5
+- Accuracy:How factually correct is the information? 1-5
 
-Clarity: How clear and easy to understand? 1-5
+- Clarity: How clear and easy to understand? 1-5
 
-Relevance:How well does it answer the question? 1-5
+- Relevance:How well does it answer the question? 1-5
 
-Faithfulness:How true to the source material? 1-5
+- Faithfulness:How true to the source material? 1-5
 
 **Question 4:**
 
 Please rate Text B on the following criteria (1 = Poor, 5 = Excellent)
 
-Accuracy:How factually correct is the information? 1-5
+- Accuracy:How factually correct is the information? 1-5
 
-Clarity: How clear and easy to understand? 1-5
+- Clarity: How clear and easy to understand? 1-5
 
-Relevance:How well does it answer the question? 1-5
+- Relevance:How well does it answer the question? 1-5
 
-Faithfulness:How true to the source material? 1-5
+- Faithfulness:How true to the source material? 1-5
 
 ---
 
@@ -530,49 +534,49 @@ mission success.
 
 Which text do you prefer? Which one is better in you opinion?
 
-Text A
+- Text A
 
-Text B
+- Text B
 
-I'm not sure / Can't tell the difference
+- I'm not sure / Can't tell the difference
 
 **Question 2:**
 
 Can you identify which model generated which text?
 
-Text A is open-source model, Text B is commercial model
+- Text A is open-source model, Text B is commercial model
 
-Text A is commercial model, Text B is open-source model
+- Text A is commercial model, Text B is open-source model
 
-Both are commercial models
+- Both are commercial models
 
-Both are open-source models
+- Both are open-source models
 
-I'm not sure
+- I'm not sure
 
 **Question 3:**
 
 Please rate Text A on the following criteria (1 = Poor, 5 = Excellent)
 
-Accuracy:How factually correct is the information? 1-5
+- Accuracy:How factually correct is the information? 1-5
 
-Clarity: How clear and easy to understand? 1-5
+- Clarity: How clear and easy to understand? 1-5
 
-Relevance:How well does it answer the question? 1-5
+- Relevance:How well does it answer the question? 1-5
 
-Faithfulness:How true to the source material? 1-5
+- Faithfulness:How true to the source material? 1-5
 
 **Question 4:**
 
 Please rate Text B on the following criteria (1 = Poor, 5 = Excellent)
 
-Accuracy:How factually correct is the information? 1-5
+- Accuracy:How factually correct is the information? 1-5
 
-Clarity: How clear and easy to understand? 1-5
+- Clarity: How clear and easy to understand? 1-5
 
-Relevance:How well does it answer the question? 1-5
+- Relevance:How well does it answer the question? 1-5
 
-Faithfulness:How true to the source material? 1-5
+- Faithfulness:How true to the source material? 1-5
 
 ---
 
@@ -619,49 +623,49 @@ lives.
 
 Which text do you prefer? Which one is better in you opinion?
 
-Text A
+- Text A
 
-Text B
+- Text B
 
-I'm not sure / Can't tell the difference
+- I'm not sure / Can't tell the difference
 
 **Question 2:**
 
 Can you identify which model generated which text?
 
-Text A is open-source model, Text B is commercial model
+- Text A is open-source model, Text B is commercial model
 
-Text A is commercial model, Text B is open-source model
+- Text A is commercial model, Text B is open-source model
 
-Both are commercial models
+- Both are commercial models
 
-Both are open-source models
+- Both are open-source models
 
-I'm not sure
+- I'm not sure
 
 **Question 3:**
 
 Please rate Text A on the following criteria (1 = Poor, 5 = Excellent)
 
-Accuracy:How factually correct is the information? 1-5
+- Accuracy:How factually correct is the information? 1-5
 
-Clarity: How clear and easy to understand? 1-5
+- Clarity: How clear and easy to understand? 1-5
 
-Relevance:How well does it answer the question? 1-5
+- Relevance:How well does it answer the question? 1-5
 
-Faithfulness:How true to the source material? 1-5
+- Faithfulness:How true to the source material? 1-5
 
 **Question 4:**
 
 Please rate Text B on the following criteria (1 = Poor, 5 = Excellent)
 
-Accuracy:How factually correct is the information? 1-5
+- Accuracy:How factually correct is the information? 1-5
 
-Clarity: How clear and easy to understand? 1-5
+- Clarity: How clear and easy to understand? 1-5
 
-Relevance:How well does it answer the question? 1-5
+- Relevance:How well does it answer the question? 1-5
 
-Faithfulness:How true to the source material? 1-5
+- Faithfulness:How true to the source material? 1-5
 
 ---
 
@@ -703,49 +707,49 @@ into a historic triumph
 
 Which text do you prefer? Which one is better in you opinion?
 
-Text A
+- Text A
 
-Text B
+- Text B
 
-I'm not sure / Can't tell the difference
+- I'm not sure / Can't tell the difference
 
 **Question 2:**
 
 Can you identify which model generated which text?
 
-Text A is open-source model, Text B is commercial model
+- Text A is open-source model, Text B is commercial model
 
-Text A is commercial model, Text B is open-source model
+- Text A is commercial model, Text B is open-source model
 
-Both are commercial models
+- Both are commercial models
 
-Both are open-source models
+- Both are open-source models
 
-I'm not sure
+- I'm not sure
 
 **Question 3:**
 
 Please rate Text A on the following criteria (1 = Poor, 5 = Excellent)
 
-Accuracy:How factually correct is the information? 1-5
+- Accuracy:How factually correct is the information? 1-5
 
-Clarity: How clear and easy to understand? 1-5
+- Clarity: How clear and easy to understand? 1-5
 
-Relevance:How well does it answer the question? 1-5
+- Relevance:How well does it answer the question? 1-5
 
-Faithfulness:How true to the source material? 1-5
+- Faithfulness:How true to the source material? 1-5
 
 **Question 4:**
 
 Please rate Text B on the following criteria (1 = Poor, 5 = Excellent)
 
-Accuracy:How factually correct is the information? 1-5
+- Accuracy:How factually correct is the information? 1-5
 
-Clarity: How clear and easy to understand? 1-5
+- Clarity: How clear and easy to understand? 1-5
 
-Relevance:How well does it answer the question? 1-5
+- Relevance:How well does it answer the question? 1-5
 
-Faithfulness:How true to the source material? 1-5
+- Faithfulness:How true to the source material? 1-5
 
 ---
 
@@ -757,33 +761,37 @@ Thank you for evaluating the texts! We'd love to hear your overall thoughts.
 
 Did you notice any patterns or differences between the texts?
 
-Yes, clear patterns
+- Yes, clear patterns
 
-Yes, minor differences
+- Yes, minor differences
 
-No, they seem similar
+- No, they seem similar
 
-Not sure
+- Not sure
 
 **Question 2:**
 
 If yes, please describe what you noticed (optional):
+
+-
 
 **Question 3:**
 
 After completing this evaluation, do you think open-source AI models can
 compete with commercial models in terms of quality?
 
-Yes, they seem comparable
+- Yes, they seem comparable
 
-Mostly yes, with minor differences
+- Mostly yes, with minor differences
 
-Not sure / It depends on the task
+- Not sure / It depends on the task
 
-No, commercial models are clearly noticeable
+- No, commercial models are clearly noticeable
 
-I couldn't tell which was which
+- I couldn't tell which was which
 
 **Question 4:**
 
 Any additional comments or feedback about this study? (optional)
+
+-
