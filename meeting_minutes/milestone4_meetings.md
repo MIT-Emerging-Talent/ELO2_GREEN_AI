@@ -58,7 +58,7 @@ intentionally used across multiple sections for structural clarity.
 ### Summary
 
 - The team revisited the original plan for the evaluation form. Initially,
-  **all 21 questions** across all task categories were intended to be included.  
+  **all 21 questions** across all task categories were intended to be included.
 - However, because a 21-question survey would be too long for participants, the
   group agreed to **select only two questions per category** to keep the form
   manageable.  
