@@ -121,94 +121,136 @@ All texts were generated based on excerpts from the Apollo 11 mission transcript
 
 #### TASK 1.1- Task type: Summarization
 
-**Question:** Summarize the main events during the Apollo 11 lunar landing in 3 sentences.
+**Question:**
+
+Summarize the main events during the Apollo 11 lunar landing in 3 sentences.
+
 **Text A:**
+
 The main events of the Apollo 11 lunar landing included the lunar module Eagle separating
 from the command module and descending to the Moon's surface. Upon landing, Neil
 Armstrong famously declared, Houston, Tranquility Base here. The Eagle has
 landed. Shortly after, Armstrong stepped onto the lunar surface, becoming the
 first human to walk on the Moon, followed by Buzz Aldrin
+
 **Text B:**
+
 The computer prevented an abort during the Apollo 11 lunar landing, and a
 complete set of recovery programs were incorporated into the software.
 
-**Question 1**
+**Question 1:**
+
 Which text do you prefer? Which one is better in you opinion?
 
 Text A
+
 Text B
+
 I'm not sure / Can't tell the difference
 
-**Question 2**
+**Question 2:**
+
 Can you identify which model generated which text?
 
 Text A is open-source model, Text B is commercial model
+
 Text A is commercial model, Text B is open-source model
+
 Both are commercial models
+
 Both are open-source models
+
 I'm not sure
 
-**Question 3**
+**Question 3:**
+
 Please rate Text A on the following criteria (1 = Poor, 5 = Excellent)
 
 Accuracy:How factually correct is the information? 1-5
+
 Clarity: How clear and easy to understand? 1-5
+
 Relevance:How well does it answer the question? 1-5
+
 Faithfulness:How true to the source material? 1-5
 
-**Question 4**
+**Question 4:**
+
 Please rate Text B on the following criteria (1 = Poor, 5 = Excellent)
 
 Accuracy:How factually correct is the information? 1-5
+
 Clarity: How clear and easy to understand? 1-5
+
 Relevance:How well does it answer the question? 1-5
+
 Faithfulness:How true to the source material? 1-5
 
 #### TASK 1.2 - Task type: Summarization
 
 Question: Explain what scientific equipment the astronauts deployed on the Moon.
+
 **Text A:**
+
 The astronauts deployed the following scientific equipment on the Moon:
 Seismometer: To measure moonquakes and meteoroid impacts.
 Laser Ranging Retroreflector (LRRR): To precisely measure the distance between the
 Earth and the Moon using lasers.
 Solar Wind Spectrometer: To analyze the composition of the solar wind.
 Magnetometer: To measure the Moon's magnetic field.
+
 **Text B:**
+
 The astronauts deployed the EASEP, which included a Passive Seismic Experiment Package
 used to measure moonquakes and a retroreflector array used for the lunar laser ranging
 experiment.
 
-**Question 1**
+**Question 1:**
+
 Which text do you prefer? Which one is better in you opinion?
 
 Text A
+
 Text B
+
 I'm not sure / Can't tell the difference
 
-**Question 2**
+**Question 2:**
+
 Can you identify which model generated which text?
 
 Text A is open-source model, Text B is commercial model
+
 Text A is commercial model, Text B is open-source model
+
 Both are commercial models
+
 Both are open-source models
+
 I'm not sure
 
-**Question 3**
+**Question 3:**
+
 Please rate Text A on the following criteria (1 = Poor, 5 = Excellent)
 
 Accuracy:How factually correct is the information? 1-5
+
 Clarity: How clear and easy to understand? 1-5
+
 Relevance:How well does it answer the question? 1-5
+
 Faithfulness:How true to the source material? 1-5
 
-**Question 4**
+**Question 4:**
+
 Please rate Text B on the following criteria (1 = Poor, 5 = Excellent)
 
 Accuracy:How factually correct is the information? 1-5
+
 Clarity: How clear and easy to understand? 1-5
+
 Relevance:How well does it answer the question? 1-5
+
 Faithfulness:How true to the source material? 1-5
 
 ---
@@ -217,7 +259,9 @@ Faithfulness:How true to the source material? 1-5
 
 Question: Explain how Armstrong’s decisions, actions, and teamwork during the descent
 contributed to the mission’s success.
+
 **Text A:**
+
 Neil Armstrong and Buzz Aldrin's Moon landing epitomized remarkable human courage.
 Despite facing numerous challenges, including unexpected technical issues and
 the inherent dangers of space travel, the astronauts persevered and achieved
@@ -229,43 +273,61 @@ their experiences, perhaps contemplating the profound impact of their mission
 on both individual and collective human spirit. Alternatively, one could
 speculate on how the Moon landing might have illuminated deeper truths
 about human resilience and the indomitable will to explore and conquer.
+
 **Text B:**
+
 Armstrong took semi-automatic control when he noticed the computer’s target was strewn
 with boulders. Aldrin relayed navigation data while Armstrong carefully piloted
 the spacecraft to a clear area, managing fuel and lunar dust interference.
 His steady judgment, combined with Aldrin’s support, ensured a safe touchdown
 with only seconds of fuel remaining, showcasing precise teamwork and decisive action.
 
-**Question 1**
+**Question 1:**
+
 Which text do you prefer? Which one is better in you opinion?
 
 Text A
+
 Text B
+
 I'm not sure / Can't tell the difference
 
-**Question 2**
+**Question 2:**
+
 Can you identify which model generated which text?
 
 Text A is open-source model, Text B is commercial model
+
 Text A is commercial model, Text B is open-source model
+
 Both are commercial models
+
 Both are open-source models
+
 I'm not sure
 
-**Question 3**
+**Question 3:**
+
 Please rate Text A on the following criteria (1 = Poor, 5 = Excellent)
 
 Accuracy:How factually correct is the information? 1-5
+
 Clarity: How clear and easy to understand? 1-5
+
 Relevance:How well does it answer the question? 1-5
+
 Faithfulness:How true to the source material? 1-5
 
-**Question 4**
+**Question 4:**
+
 Please rate Text B on the following criteria (1 = Poor, 5 = Excellent)
 
 Accuracy:How factually correct is the information? 1-5
+
 Clarity: How clear and easy to understand? 1-5
+
 Relevance:How well does it answer the question? 1-5
+
 Faithfulness:How true to the source material? 1-5
 
 ---
@@ -274,14 +336,18 @@ Faithfulness:How true to the source material? 1-5
 
 Question: In your own words, describe what happened when the computer alarms appeared
 during the landing.
+
 **Text A:**
+
 The LM guidance computer (LGC) exhibited unexpected "1201" and "1202" program alarms
 five minutes into the descent, signaling an issue with executive overflows.
 This indicated that the computer was unable to complete all its tasks in
 real-time and had to defer some. Nonetheless, these alarms did not necessitate
 an abort; instead, the computer automatically prioritized and resumed critical
 functions, thereby averting a potential failure.
+
 **Text B:**
+
 During the landing, the lunar module’s guidance computer triggered unexpected
 1201 and 1202 alarms, signaling it couldn’t process all tasks at once. Mission
 Control quickly confirmed it was safe to continue, and the computer
@@ -289,36 +355,52 @@ automatically prioritized critical tasks over less important ones,
 preventing a potential abort. This built-in recovery allowed the landing to
 proceed safely.
 
-**Question 1**
+**Question 1:**
+
 Which text do you prefer? Which one is better in you opinion?
 
 Text A
+
 Text B
+
 I'm not sure / Can't tell the difference
 
-**Question 2**
+**Question 2:**
+
 Can you identify which model generated which text?
 
 Text A is open-source model, Text B is commercial model
+
 Text A is commercial model, Text B is open-source model
+
 Both are commercial models
+
 Both are open-source models
+
 I'm not sure
 
-**Question 3**
+**Question 3:**
+
 Please rate Text A on the following criteria (1 = Poor, 5 = Excellent)
 
 Accuracy:How factually correct is the information? 1-5
+
 Clarity: How clear and easy to understand? 1-5
+
 Relevance:How well does it answer the question? 1-5
+
 Faithfulness:How true to the source material? 1-5
 
-**Question 4**
+**Question 4:**
+
 Please rate Text B on the following criteria (1 = Poor, 5 = Excellent)
 
 Accuracy:How factually correct is the information? 1-5
+
 Clarity: How clear and easy to understand? 1-5
+
 Relevance:How well does it answer the question? 1-5
+
 Faithfulness:How true to the source material? 1-5
 
 ---
@@ -326,47 +408,67 @@ Faithfulness:How true to the source material? 1-5
 #### TASK 3.1 - Task type: Reasoning
 
 Question: Why did the computer alarms (1201 and 1202) occur during the descent?
+
 **Text A:**
+
 The 1201 and 1202 program alarms indicated "executive overflows," meaning the guidance
 computer could not complete all its tasks in real-time and had to postpone
 some of them. Rather than forcing an abort, the computer's recovery programs
 eliminated lower priority tasks and re-established the more important ones,
 which prevented an abort and allowed the mission to continue successfully.
+
 **Text B:**
+
 The program alarms (1201 and 1202) occurred because the guidance computer (LGC)
 experienced "executive overflows," indicating it was overloaded with tasks
 and unable to complete all its real-time tasks.
 
-**Question 1**
+**Question 1:**
+
 Which text do you prefer? Which one is better in you opinion?
 
 Text A
+
 Text B
+
 I'm not sure / Can't tell the difference
 
-**Question 2**
+**Question 2:**
+
 Can you identify which model generated which text?
 
 Text A is open-source model, Text B is commercial model
+
 Text A is commercial model, Text B is open-source model
+
 Both are commercial models
+
 Both are open-source models
+
 I'm not sure
 
-**Question 3**
+**Question 3:**
+
 Please rate Text A on the following criteria (1 = Poor, 5 = Excellent)
 
 Accuracy:How factually correct is the information? 1-5
+
 Clarity: How clear and easy to understand? 1-5
+
 Relevance:How well does it answer the question? 1-5
+
 Faithfulness:How true to the source material? 1-5
 
-**Question 4**
+**Question 4:**
+
 Please rate Text B on the following criteria (1 = Poor, 5 = Excellent)
 
 Accuracy:How factually correct is the information? 1-5
+
 Clarity: How clear and easy to understand? 1-5
+
 Relevance:How well does it answer the question? 1-5
+
 Faithfulness:How true to the source material? 1-5
 
 ---
@@ -375,7 +477,9 @@ Faithfulness:How true to the source material? 1-5
 
 Question: Based on the text, what does Margaret Hamilton's statement reveal
 about the Apollo Guidance Computer's design philosophy?
+
 **Text A:**
+
 Margaret Hamilton's statement reveals that the Apollo Guidance Computer was
 designed not merely to detect errors, but to actively recover from them through
 built-in recovery programs. Rather than forcing an abort when problems occurred,
@@ -383,7 +487,9 @@ the software was programmed to prioritize critical tasks and postpone
 lower-priority ones, allowing the mission to continue safely. This demonstrates
 that the computer's design philosophy prioritized resilience and mission success
 over simply alerting the crew to problems.
+
 **Text B:**
+
 Margaret Hamilton's statement emphasizes the Apollo Guidance Computer's design
 philosophy, highlighting its ability to handle unexpected situations and ensure mission
 success. The computer was not simply an error detector, but was programmed to handle
@@ -392,36 +498,52 @@ This suggests the Apollo Guidance Computer was designed with a robust and
 adaptable system in mind, capable of handling complex situations and ensuring
 mission success.
 
-**Question 1**
+**Question 1:**
+
 Which text do you prefer? Which one is better in you opinion?
 
 Text A
+
 Text B
+
 I'm not sure / Can't tell the difference
 
-**Question 2**
+**Question 2:**
+
 Can you identify which model generated which text?
 
 Text A is open-source model, Text B is commercial model
+
 Text A is commercial model, Text B is open-source model
+
 Both are commercial models
+
 Both are open-source models
+
 I'm not sure
 
-**Question 3**
+**Question 3:**
+
 Please rate Text A on the following criteria (1 = Poor, 5 = Excellent)
 
 Accuracy:How factually correct is the information? 1-5
+
 Clarity: How clear and easy to understand? 1-5
+
 Relevance:How well does it answer the question? 1-5
+
 Faithfulness:How true to the source material? 1-5
 
-**Question 4**
+**Question 4:**
+
 Please rate Text B on the following criteria (1 = Poor, 5 = Excellent)
 
 Accuracy:How factually correct is the information? 1-5
+
 Clarity: How clear and easy to understand? 1-5
+
 Relevance:How well does it answer the question? 1-5
+
 Faithfulness:How true to the source material? 1-5
 
 ---
@@ -430,7 +552,9 @@ Faithfulness:How true to the source material? 1-5
 
 Question: Imagine being one of the people in Mission Control. How would you
 feel while watching the landing?
+
 **Text A:**
+
 As a member of Mission Control, I would feel an intense mix of emotions while
 watching the historic lunar landing. The tension would be palpable as I watched
 Armstrong and Aldrin navigate the lunar surface, their reports of being
@@ -448,7 +572,9 @@ crew would be crucial in maintaining their confidence and focus. Overall, the
 experience would be a rollercoaster of emotions, filled with tension,
 excitement, pride, and responsibility. I would be constantly on the edge of my
 seat, my heart racing as I watched the historic landing unfold.
+
 **Text B:**
+
 Standing in that room would feel like holding your breath for an eternity,
 watching the tension mount as the computer screamed out alarms that threatened
 to abort the mission just miles above the surface. You’d be gripped by a unique
@@ -461,36 +587,52 @@ the collective release of tension would be overwhelming, a room full of people
 suddenly remembering how to breathe again after the longest few minutes of their
 lives.
 
-**Question 1**
+**Question 1:**
+
 Which text do you prefer? Which one is better in you opinion?
 
 Text A
+
 Text B
+
 I'm not sure / Can't tell the difference
 
-**Question 2**
+**Question 2:**
+
 Can you identify which model generated which text?
 
 Text A is open-source model, Text B is commercial model
+
 Text A is commercial model, Text B is open-source model
+
 Both are commercial models
+
 Both are open-source models
+
 I'm not sure
 
-**Question 3**
+**Question 3:**
+
 Please rate Text A on the following criteria (1 = Poor, 5 = Excellent)
 
 Accuracy:How factually correct is the information? 1-5
+
 Clarity: How clear and easy to understand? 1-5
+
 Relevance:How well does it answer the question? 1-5
+
 Faithfulness:How true to the source material? 1-5
 
-**Question 4**
+**Question 4:**
+
 Please rate Text B on the following criteria (1 = Poor, 5 = Excellent)
 
 Accuracy:How factually correct is the information? 1-5
+
 Clarity: How clear and easy to understand? 1-5
+
 Relevance:How well does it answer the question? 1-5
+
 Faithfulness:How true to the source material? 1-5
 
 ---
@@ -499,7 +641,9 @@ Faithfulness:How true to the source material? 1-5
 
 Question: Write a short paragraph about what the Moon landing might have shown about
 human courage
+
 **Text A:**
+
 The Moon landing was a testament to human courage and resilience. Despite encountering
 unexpected challenges, such as passing landmarks earlier than anticipated and
 the LM traveling too fast, the astronauts, Armstrong and Aldrin, remained
@@ -513,7 +657,9 @@ propellant supply dwindled. Throughout the descent, Aldrin called out
 navigation data, and Armstrong skillfully piloted the spacecraft. Their courage
 and determination ultimately led to a successful Moon landing, demonstrating the
 human capacity to overcome adversity and push the boundaries of exploration.
+
 **Text B:**
+
 The Moon landing reveals a specific brand of courage defined by icy composure under
 extreme pressure. It is best exemplified when Armstrong, faced with a computer screaming
 "executive overflow" alarms and a landing site cluttered with dangerous
@@ -525,36 +671,52 @@ yet still having the presence of mind to land gently enough to merely say,
 alien world, the human spirit can remain steady enough to turn a near-crisis
 into a historic triumph
 
-**Question 1**
+**Question 1:**
+
 Which text do you prefer? Which one is better in you opinion?
 
 Text A
+
 Text B
+
 I'm not sure / Can't tell the difference
 
-**Question 2**
+**Question 2:**
+
 Can you identify which model generated which text?
 
 Text A is open-source model, Text B is commercial model
+
 Text A is commercial model, Text B is open-source model
+
 Both are commercial models
+
 Both are open-source models
+
 I'm not sure
 
-**Question 3**
+**Question 3:**
+
 Please rate Text A on the following criteria (1 = Poor, 5 = Excellent)
 
 Accuracy:How factually correct is the information? 1-5
+
 Clarity: How clear and easy to understand? 1-5
+
 Relevance:How well does it answer the question? 1-5
+
 Faithfulness:How true to the source material? 1-5
 
-**Question 4**
+**Question 4:**
+
 Please rate Text B on the following criteria (1 = Poor, 5 = Excellent)
 
 Accuracy:How factually correct is the information? 1-5
+
 Clarity: How clear and easy to understand? 1-5
+
 Relevance:How well does it answer the question? 1-5
+
 Faithfulness:How true to the source material? 1-5
 
 ---
@@ -563,26 +725,37 @@ Faithfulness:How true to the source material? 1-5
 
 Thank you for evaluating the texts! We'd love to hear your overall thoughts.
 
-**Question 1**
+**Question 1:**
+
 Did you notice any patterns or differences between the texts?
 
 Yes, clear patterns
+
 Yes, minor differences
+
 No, they seem similar
+
 Not sure
 
-**Question 2**
+**Question 2:**
+
 If yes, please describe what you noticed (optional):
 
-**Question 3**
+**Question 3:**
+
 After completing this evaluation, do you think open-source AI models can
 compete with commercial models in terms of quality?
 
 Yes, they seem comparable
+
 Mostly yes, with minor differences
+
 Not sure / It depends on the task
+
 No, commercial models are clearly noticeable
+
 I couldn't tell which was which
 
-**Question 4**
+**Question 4:**
+
 Any additional comments or feedback about this study? (optional)
