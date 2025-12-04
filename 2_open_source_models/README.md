@@ -21,7 +21,7 @@ model-specific setup.
 │   └── mistral7b/
 │
 └── slm/
-    ├── google_gemm/
+    ├── google_gemma/
     └── qwen/
 ```
 
@@ -77,7 +77,7 @@ A strong example of how quantization enables
 
 ### **3. Small Language Model (SLM): Google Gemma 2-2B**
 
-**Folder:** `slm/google_gemm/`
+**Folder:** `slm/google_gemma/`
 
 This experiment implements a structured RAG workflow with Google’s lightweight
 **Gemma 2-2B** model and a fixed Apollo 11 source text.
