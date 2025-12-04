@@ -43,20 +43,31 @@ What is your Nationality?
 What is your native (first) language?
 
 English
+
 Spanish
+
 German
+
 Arabic
+
 Turkish
+
 Chinese
+
 Russian
+
 Other:
 
 How would you rate your English proficiency?
 
 Native speaker
+
 Fluent (C2 - can understand everything easily)
-Advanced (C1 - can understand complex texta)
+
+Advanced (C1 - can understand complex text)
+
 Intermediate (B1-B2 - can understand most everyday texts)
+
 Basic (A1-A2 - still learning)
 
 What is your current Occupation or field of study?
@@ -65,31 +76,48 @@ e.g., Computer Science Student, Software Engineer, Teacher, Researcher, Marketin
 How often do you use AI tools (e.g., ChatGPT, Claude, Gemini, Copilot, etc.)?
 
 Daily
+
 Several times a week
+
 Once a week
+
 A few times a month
+
 Rarely
+
 Never
 
 What do you primarily use AI tools for? (select all that apply)
 
 Writing and editing assistance
+
 Research and information gathering
+
 Coding and programming
+
 Creative work (stories, art, brainstorming)
+
 Learning and education
+
 Work or professional tasks
+
 Translation or language learning
+
 Personal use or entertainment
+
 I don't use AI tools
+
 Other:
 
 Are you familiar with the difference between open-source and commercial AI
 models?
 
 Yes, very familiar
+
 Somewhat familiar
+
 I've heard of it but don't know details
+
 No, not familiar
 
 ---
