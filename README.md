@@ -132,10 +132,22 @@ perception-based counterpart to technical evaluation.
 
 ## 📊 Key Findings
 
-- FINDING1.....
-- FINDING2.....
-- FINDING3.....
-- FINDING4.....
+- Through our work and experiments, we were able to raise an important question and
+demonstrate that open-source models, when carefully optimized, have significant
+untapped potential
+and with the right tweaks, they can meaningfully compete with commercial LLMs.
+
+- The results show a promising trend: nearly 40% of respondents felt that open-
+source models are either
+fully comparable or only slightly behind commercial systems. Meanwhile, 45.2%
+indicated that performance
+differences depend on the specific task suggesting that open-source models can
+match commercial quality in many real-world scenarios. Only a small minority felt
+that commercial models were clearly superior. These findings reinforce our conclusion
+that, with the right optimizations and configurations, open-source models have the
+potential to compete meaningfully with commercial AI systems.
+
+  ![image](readme_images/chart2.png)
 
 ---
 
