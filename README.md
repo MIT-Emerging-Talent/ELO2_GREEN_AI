@@ -147,7 +147,7 @@ that commercial models were clearly superior. These findings reinforce our concl
 that, with the right optimizations and configurations, open-source models have the
 potential to compete meaningfully with commercial AI systems.
 
-![image](readme_images/chart.jpg)
+  ![image](readme_images/chart.jpg)
 
 ---
 
