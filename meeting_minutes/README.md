@@ -56,6 +56,6 @@ By the end of Milestone 4, the project integrated the human evaluation results i
 
 **Timeline:** December 4 – ongoing
 
-Milestone 5 focuses on packaging and communicating the project’s findings while completing the final presentation and releasing the full set of artifacts. The team is synthesizing human evaluation results to produce a coherent analysis narrative, drafting and editing the presentation and article for publication, and finalizing an infographic and visual summary that will be embedded in both the article and the presentation.
+Milestone 5 focused on packaging and communicating the project’s findings while completing the final presentation and releasing the full set of artifacts. The team synthesized human evaluation results to produce a coherent analysis narrative, drafting and editing the presentation and article for publication, and finalized an infographic and visual summary that is embedded in both the article and the presentation.
 
-In parallel, the repository is being cleaned and organized to publish the code, data, and analysis notebooks with clear usage notes and data access instructions. Everything will be finalized on December 7.
+In parallel, the repository was being cleaned and organized to publish the code, data, and analysis notebooks with clear usage notes and data access instructions. Everything is finalized on December 7.
