@@ -41,3 +41,29 @@ intentionally used across multiple sections for structural clarity.
   finalize the project.
 
 ---
+
+## Meeting 23
+
+**Date:** December 7, 2025 (Sunday, 12:00 PM EST)  
+**Attendees:** Amro, Aseel, Banu, Caesar, Safia, Reem  
+
+### Summary
+
+- The team confirmed that the project was in its final stage and checked on last-minute
+  tasks before submission.  
+- Members reviewed **Reem’s visualization tool**, expressing strong approval and
+  agreeing it should be included in the presentation as a demo video.  
+- The group prepared for the **final presentation** and the publication of the
+  **Medium article**, coordinating timing and responsibilities.  
+- Repository organization tasks were reviewed.
+- The team acknowledged that all major work was complete and aligned on wrapping
+  up the project.
+
+### Action Plan
+
+- **Caesar** will publish the Medium article today.  
+- **Aseel** will submit the final presentation.
+- **Reem** will prepare the **demo video** showcasing the visualization tool
+  for the presentation.
+- **Amro** will finalize the repo READMEs.
+- **Team** will submit all the work today.
