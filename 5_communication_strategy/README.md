@@ -25,4 +25,4 @@ follow our thought process from beginning to end. More importantly, an article
 helps us communicate not only what we built, but why it mattered and how the
 experience shaped our learning.
 
-[🔗 Read the Article](https://your-article-link.com)
+[🔗 Read the Article](https://medium.com/@caesarghazi13/sustainable-ai-is-possible-how-we-made-tiny-llms-beat-the-giants-and-halved-the-energy-bill-b44a5c73bd58)
