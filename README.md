@@ -167,7 +167,7 @@ methodology, and key findings without requiring deep technical background.
 A public evaluation study invites participation in assessing AI-generated texts.
 This crowd sourced data forms a critical component of the research.
 
-🔗 **[Participate in Study](./3_experiment/survey_form.md)**
+🔗 **[The Study](./3_experiment/survey_form.md)**
 
 ---
 
