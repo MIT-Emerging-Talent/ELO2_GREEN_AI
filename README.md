@@ -153,7 +153,7 @@ audiences and purposes:
 A comprehensive research article will document the complete experimental design,
 statistical analysis, and implications.
 
-🔗 **[View Aticle](./5_communication_strategy/README.md)**
+🔗 **[View Article](./5_communication_strategy/README.md)**
 
 ### For Practitioners & Educators
 
