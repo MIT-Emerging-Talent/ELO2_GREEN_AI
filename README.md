@@ -120,14 +120,6 @@ A structured Google Form experiment collected:
 Outputs were randomized and anonymized to avoid bias. This provided a
 perception-based counterpart to technical evaluation.
 
-### 7. Analysing the Results
-
-....
-
-### 8. Publishing an Article
-
-....
-
 ---
 
 ## 📊 Key Findings
@@ -151,15 +143,6 @@ potential to compete meaningfully with commercial AI systems.
 
 ---
 
-## 🔮 Future Work
-
-- Evaluate additional open-source model families across diverse tasks
-- Test optimized pipelines in specialized domains (medical, legal, technical writing)
-- Track carbon footprint across full lifecycle (training to deployment)
-- Conduct ablation studies isolating RAG vs. recursive editing contributions
-
----
-
 ## 📢 Communication Strategy
 
 The research findings will be shared through formats designed for different
@@ -170,28 +153,30 @@ audiences and purposes:
 A comprehensive research article will document the complete experimental design,
 statistical analysis, and implications.
 
-🔗 **[View Aticle](link1)**
+🔗 **[View Article](./5_communication_strategy/README.md)**
 
 ### For Practitioners & Educators
 
 An executive presentation provides a visual overview of the research question,
 methodology, and key findings without requiring deep technical background.
 
-🔗 **[View Presentation](link2)**
+🔗 **[View Presentation](./6_final_presentation/README.md)**
 
 ### For the Community
 
 A public evaluation study invites participation in assessing AI-generated texts.
-This crowdsourced data forms a critical component of the research.
+This crowd sourced data forms a critical component of the research.
 
-🔗 **[Participate in Study](link3)**
+🔗 **[The Study](./3_experiment/survey_form.md)**
 
-### For Reproducibility
+---
 
-All materials (dataset, prompts, model outputs, evaluation scripts, and carbon
-tracking logs) are publicly available in this repository.
+## 🔮 Future Work
 
-🔗 **[Browse Repository](https://github.com/banuozyilmaz2-jpg/ELO2-GREEN-AI)**
+- Evaluate additional open-source model families across diverse tasks
+- Test optimized pipelines in specialized domains (medical, legal, technical writing)
+- Track carbon footprint across full lifecycle (training to deployment)
+- Conduct ablation studies isolating RAG vs. recursive editing contributions
 
 ---
 
